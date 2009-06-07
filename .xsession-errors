@@ -1,0 +1,891 @@
+/etc/gdm/Xsession: Beginning session setup...
+/etc/gdm/Xsession: ssh-agent not found!
+/etc/gdm/Xsession: Setup done, will execute: /usr/bin/awesome
+Entered rc.lua: 1244335923
+Entered rc.lua: 1244335923
+/usr/share/awesome/lib/awful/util.lua:228: bad argument #1 to 'pairs' (table expected, got userdata)
+Various.Artists.-.[Rock.&amp;.Roll.2.-.Shake.The.Temple.Buildings.Rolling].专辑.(mp3)/041_金属_one一个.mp3
+[playing] #162/686   0:00/7:54 (0%)
+volume: 70%   repeat: off   random: on 
+His Remedy
+[playing] #439/686   0:00/3:19 (0%)
+volume: 70%   repeat: off   random: on 
+His Remedy
+[playing] #439/686   0:04/3:19 (2%)
+volume: 64%   repeat: off   random: on 
+His Remedy
+[playing] #439/686   0:04/3:19 (2%)
+volume: 61%   repeat: off   random: on 
+His Remedy
+[playing] #439/686   0:04/3:19 (2%)
+volume: 58%   repeat: off   random: on 
+His Remedy
+[playing] #439/686   0:04/3:19 (2%)
+volume: 55%   repeat: off   random: on 
+His Remedy
+[playing] #439/686   0:05/3:19 (3%)
+volume: 55%   repeat: off   random: on 
+His Remedy
+[playing] #439/686   0:05/3:19 (3%)
+volume: 52%   repeat: off   random: on 
+His Remedy
+[playing] #439/686   0:05/3:19 (3%)
+volume: 49%   repeat: off   random: on 
+His Remedy
+[playing] #439/686   0:05/3:19 (3%)
+volume: 46%   repeat: off   random: on 
+His Remedy
+[paused]  #439/686   0:05/3:19 (3%)
+volume: 46%   repeat: off   random: on 
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/mouse.lua:174: mousegrabber already running
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/mouse.lua:174: mousegrabber already running
+glPHProxy [urlgateway.com] testing result:3
+glPHProxy [smoothunlock.info] testing result:3
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/mouse.lua:174: mousegrabber already running
+glPHProxy [proxy88.com] testing result:17
+glPHProxy [hidemeweb.info] testing result:-2
+glPHProxy [networksafe.info] testing result:-2
+glPHProxy [smoothunlock.info] testing result:3
+glPHProxy [urlgateway.com] testing result:3
+glPHProxy [proxy88.com] testing result:7
+Entered rc.lua: 1244336149
+Entered rc.lua: 1244336149
+/usr/share/awesome/lib/awful/util.lua:228: bad argument #1 to 'pairs' (table expected, got userdata)
+Entered rc.lua: 1244336159
+Entered rc.lua: 1244336159
+/usr/share/awesome/lib/awful/util.lua:228: bad argument #1 to 'pairs' (table expected, got userdata)
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/mouse.lua:174: mousegrabber already running
+glPHProxy [networksafe.info] testing result:-2
+glPHProxy [hidemeweb.info] testing result:-2
+glPHProxy [lolwut.info] testing result:-2
+glPHProxy [xpryo.info] testing result:-3
+glPHProxy [yuppiebooks.com] testing result:-2
+glPHProxy [freealaska.info] testing result:-3
+glPHProxy [faceoxy.com] testing result:-2
+glPHProxy [proxypit.com] testing result:-3
+glPHProxy [nolimitaccess.info] testing result:-2
+glPHProxy [rightproxy.info] testing result:-3
+glPHProxy [cily.info] testing result:-2
+glPHProxy [nolimitbrowsing.info] testing result:-3
+glPHProxy [seaotters.info] testing result:-2
+glPHProxy [catchmenow.info] testing result:-2
+glPHProxy [invisible-proxy.com] testing result:-2
+glPHProxy [urlgateway.com] testing result:-3
+glPHProxy [smoothunlock.info] testing result:-3
+glPHProxy [proxy88.com] testing result:-3
+glPHProxy [catchmenow.info] testing result:-2
+glPHProxy [invisible-proxy.com] testing result:-2
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/menu.lua:235: client is invalid
+
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/mouse.lua:174: mousegrabber already running
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/mouse.lua:174: mousegrabber already running
+glPHProxy [smoothunlock.info] testing result:3
+glPHProxy [proxy88.com] testing result:-3
+glPHProxy [hotwaves.info] testing result:-2
+glPHProxy [urlgateway.com] testing result:-2
+glPHProxy [proxy88.com] testing result:-2
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/mouse.lua:174: mousegrabber already running
+Entered rc.lua: 1244337450
+Entered rc.lua: 1244337450
+unable to bind port 6600: Address already in use
+maybe MPD is still running?
+/home/xzap/.config/awesome/autostart/startup.sh: line 32: 19833 已放弃               exec mpd
+His Remedy
+[playing] #439/686   0:06/3:19 (3%)
+volume: 46%   repeat: off   random: on 
+His Remedy
+[playing] #439/686   0:06/3:19 (3%)
+volume: 46%   repeat: off   random: on 
+Awesome Autostart: Executing: startup.sh
+Awesome Autostart: Skipping file startup.sh~ not executable.
+飞轮海.-.[越来越爱(香港版)].Noath.专辑.(mp3)/03.寂寞暴走.mp3
+[playing] #678/686   0:00/4:49 (0%)
+volume: 46%   repeat: off   random: on 
+飞轮海.-.[越来越爱(香港版)].Noath.专辑.(mp3)/03.寂寞暴走.mp3
+[paused]  #678/686   0:01/4:49 (0%)
+volume: 46%   repeat: off   random: on 
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:683: attempt to index global 'tags' (a nil value)
+glPHProxy [smoothunlock.info] testing result:-3
+glPHProxy [proxy88.com] testing result:-3
+glPHProxy [hotwaves.info] testing result:-2
+glPHProxy [urlgateway.com] testing result:-3
+glPHProxy [proxy88.com] testing result:-2
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:683: attempt to index global 'tags' (a nil value)
+glPHProxy [urlgateway.com] testing result:3
+glPHProxy [smoothunlock.info] testing result:4
+glPHProxy [proxy88.com] testing result:14
+glPHProxy [proxy88.com] testing result:29
+glPHProxy [hotwaves.info] testing result:-2
+Entered rc.lua: 1244337731
+Entered rc.lua: 1244337731
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+飞轮海.-.[越来越爱(香港版)].Noath.专辑.(mp3)/03.寂寞暴走.mp3
+[playing] #678/686   0:01/4:49 (0%)
+volume:  8%   repeat: off   random: on 
+飞轮海.-.[越来越爱(香港版)].Noath.专辑.(mp3)/03.寂寞暴走.mp3
+[playing] #678/686   0:01/4:49 (0%)
+volume:  8%   repeat: off   random: on 
+unable to bind port 6600: Address already in use
+maybe MPD is still running?
+glPHProxy [free-kit.info] testing result:-3
+Awesome Autostart: Executing: startup.sh
+Awesome Autostart: Skipping file startup.sh~ not executable.
+glPHProxy [proxy2web.info] testing result:-2
+飞轮海.-.[越来越爱(香港版)].Noath.专辑.(mp3)/03.寂寞暴走.mp3
+[paused]  #678/686   0:03/4:49 (1%)
+volume:  8%   repeat: off   random: on 
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+glPHProxy [topwaves.info] testing result:-2
+glPHProxy [smoothunlock.info] testing result:-2
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+glPHProxy [radmonkey.info] testing result:-2
+glPHProxy [urlgateway.com] testing result:3
+glPHProxy [proxy88.com] testing result:12
+glPHProxy [proxy88.com] testing result:31
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+/bin/bash: startdict: command not found
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+glPHProxy [topwaves.info] testing result:-2
+glPHProxy [invisible-proxy.com] testing result:-2
+glPHProxy [proxyjunction.info] testing result:-3
+glPHProxy [tmscene.org] testing result:-3
+glPHProxy [f-ip.info] testing result:-3
+glPHProxy [rxpoy.info] testing result:-3
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/mouse.lua:174: mousegrabber already running
+glPHProxy [tindorafarms.com] testing result:-2
+glPHProxy [zban.info] testing result:-3
+glPHProxy [surfsboarders.info] testing result:-3
+glPHProxy [nolimitaccess.info] testing result:-2
+glPHProxy [unblock-all.com] testing result:-2
+glPHProxy [surf43.biz] testing result:-3
+glPHProxy [orpxy.info] testing result:-3
+glPHProxy [hostph.com] testing result:5
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+Entered rc.lua: 1244338131
+Entered rc.lua: 1244338131
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+unable to bind port 6600: Address already in use
+maybe MPD is still running?
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+飞轮海.-.[越来越爱(香港版)].Noath.专辑.(mp3)/03.寂寞暴走.mp3
+[playing] #678/686   0:04/4:49 (1%)
+volume: 17%   repeat: off   random: on 
+飞轮海.-.[越来越爱(香港版)].Noath.专辑.(mp3)/03.寂寞暴走.mp3
+[playing] #678/686   0:04/4:49 (1%)
+volume: 17%   repeat: off   random: on 
+/home/xzap/.config/awesome/autostart/startup.sh: line 35:  5720 已放弃               exec mpd
+Awesome Autostart: Executing: startup.sh
+Awesome Autostart: Skipping file startup.sh~ not executable.
+ÖìÕÜÇÙ - AudioTrack 02
+[playing] #675/686   0:00/5:49 (0%)
+volume: 17%   repeat: off   random: on 
+glPHProxy [safewww.info] testing result:-2
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+Entered rc.lua: 1244338265
+Entered rc.lua: 1244338265
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+unable to bind port 6600: Address already in use
+maybe MPD is still running?
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+ÖìÕÜÇÙ - AudioTrack 02
+[playing] #675/686   2:07/5:49 (36%)
+volume: 17%   repeat: off   random: on 
+ÖìÕÜÇÙ - AudioTrack 02
+[playing] #675/686   2:07/5:49 (36%)
+volume: 17%   repeat: off   random: on 
+/home/xzap/.config/awesome/autostart/startup.sh: line 35: 10199 已放弃               exec mpd
+Awesome Autostart: Executing: startup.sh
+Awesome Autostart: Skipping file startup.sh~ not executable.
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/tag.lua:77: attempt to index field '?' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+glPHProxy [protectedweb.info] testing result:-2
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+ÖìÕÜÇÙ - AudioTrack 02
+[paused]  #675/686   4:54/5:49 (84%)
+volume: 40%   repeat: off   random: on 
+Entered rc.lua: 1244338489
+Entered rc.lua: 1244338489
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+unable to bind port 6600: Address already in use
+maybe MPD is still running?
+ÖìÕÜÇÙ - AudioTrack 02
+[playing] #675/686   4:54/5:49 (84%)
+volume: 40%   repeat: off   random: on 
+ÖìÕÜÇÙ - AudioTrack 02
+[playing] #675/686   4:54/5:49 (84%)
+volume: 40%   repeat: off   random: on 
+/home/xzap/.config/awesome/autostart/startup.sh: line 35: 17744 已放弃               exec mpd
+Awesome Autostart: Executing: startup.sh
+Awesome Autostart: Skipping file startup.sh~ not executable.
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+glPHProxy [holdaproxy.info] testing result:-2
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+glPHProxy [xhide.us] testing result:-2
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+glPHProxy [definitesurf.com] testing result:-3
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/mouse.lua:174: mousegrabber already running
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/mouse.lua:174: mousegrabber already running
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD2].专辑.(mp3)/24.心型圈.MP3
+[playing] #614/686   3:46/4:10 (90%)
+volume: 37%   repeat: off   random: on 
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD2].专辑.(mp3)/24.心型圈.MP3
+[playing] #614/686   3:46/4:10 (90%)
+volume: 34%   repeat: off   random: on 
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD2].专辑.(mp3)/24.心型圈.MP3
+[playing] #614/686   3:46/4:10 (90%)
+volume: 31%   repeat: off   random: on 
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD2].专辑.(mp3)/24.心型圈.MP3
+[playing] #614/686   3:47/4:10 (91%)
+volume: 28%   repeat: off   random: on 
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD2].专辑.(mp3)/24.心型圈.MP3
+[playing] #614/686   3:47/4:10 (91%)
+volume: 25%   repeat: off   random: on 
+glPHProxy [securedisk.info] testing result:-2
+glPHProxy [procsie.com] testing result:-3
+glPHProxy [surfingfilter.info] testing result:-3
+glPHProxy [getbrowse.com] testing result:-2
+glPHProxy [unblockfacebook1.info] testing result:-3
+LOVE SONG
+[paused]  #499/686   2:21/4:29 (52%)
+volume: 25%   repeat: off   random: on 
+LOVE SONG
+[playing] #499/686   2:21/4:29 (52%)
+volume: 25%   repeat: off   random: on 
+¶¡ÎÄç÷ - Ö»Ïë¸úÄãÔÚÒ»Æð
+[playing] #238/686   0:00/3:56 (0%)
+volume: 25%   repeat: off   random: on 
+glPHProxy [diggaproxy.info] testing result:-2
+glPHProxy [surfedge.info] testing result:-2
+glPHProxy [unblocksite.us] testing result:-3
+glPHProxy [surfface.info] testing result:-3
+glPHProxy [hx10.info] testing result:-2
+glPHProxy [smoothtraffic.info] testing result:3
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+Entered rc.lua: 1244339101
+Entered rc.lua: 1244339101
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:674: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:674: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:674: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:674: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:674: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:674: attempt to index global 'apptags' (a nil value)
+unable to bind port 6600: Address already in use
+maybe MPD is still running?
+/home/xzap/.config/awesome/autostart/startup.sh: line 32: 23873 已放弃               exec mpd
+¶¡ÎÄç÷ - Ö»Ïë¸úÄãÔÚÒ»Æð
+[playing] #238/686   2:42/3:56 (69%)
+volume: 25%   repeat: off   random: on 
+¶¡ÎÄç÷ - Ö»Ïë¸úÄãÔÚÒ»Æð
+[playing] #238/686   2:42/3:56 (69%)
+volume: 25%   repeat: off   random: on 
+Awesome Autostart: Executing: startup.sh
+Awesome Autostart: Skipping file startup.sh~ not executable.
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/shifty.lua:296: attempt to call field 'spawn_with_shell' (a nil value)
+Entered rc.lua: 1244339165
+Entered rc.lua: 1244339165
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+¶¡ÎÄç÷ - Ö»Ïë¸úÄãÔÚÒ»Æð
+[playing] #238/686   3:46/3:56 (96%)
+volume: 25%   repeat: off   random: on 
+¶¡ÎÄç÷ - Ö»Ïë¸úÄãÔÚÒ»Æð
+[playing] #238/686   3:46/3:56 (96%)
+volume: 25%   repeat: off   random: on 
+unable to bind port 6600: Address already in use
+maybe MPD is still running?
+Awesome Autostart: Executing: startup.sh
+Awesome Autostart: Skipping file startup.sh~ not executable.
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/shifty.lua:296: attempt to call field 'spawn_with_shell' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/shifty.lua:296: attempt to call field 'spawn_with_shell' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/mouse.lua:174: mousegrabber already running
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+[10:04:00][TLOG][warn]mid_db: error message-> near "`． 
+＠飞噵埖苁盅亜`": syntax error
+ W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+Entered rc.lua: 1244340307
+Entered rc.lua: 1244340307
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+unable to bind port 6600: Address already in use
+maybe MPD is still running?
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+ÖìÕÜÇÙ - AudioTrack 04
+[playing] #672/686   2:14/4:44 (47%)
+volume: 25%   repeat: off   random: on 
+ÖìÕÜÇÙ - AudioTrack 04
+[playing] #672/686   2:14/4:44 (47%)
+volume: 25%   repeat: off   random: on 
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+Awesome Autostart: Executing: startup.sh
+Awesome Autostart: Skipping file startup.sh~ not executable.
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/mouse.lua:174: mousegrabber already running
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/mouse.lua:174: mousegrabber already running
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/mouse.lua:174: mousegrabber already running
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/mouse.lua:174: mousegrabber already running
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/mouse.lua:174: mousegrabber already running
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/mouse.lua:174: mousegrabber already running
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+ÖìÕÜÇÙ - AudioTrack 04
+[paused]  #672/686   3:21/4:44 (71%)
+volume: 28%   repeat: off   random: on 
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/shifty.lua:296: attempt to call field 'spawn_with_shell' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+²Ì¹úÈ¨ - ²»×°ÊÎÄãµÄÃÎ
+[playing] #57/686   0:00/4:00 (0%)
+volume: 28%   repeat: off   random: on 
+²Ì¹úÈ¨ - ²»×°ÊÎÄãµÄÃÎ
+[paused]  #57/686   0:01/4:00 (0%)
+volume: 28%   repeat: off   random: on 
+Entered rc.lua: 1244340566
+Entered rc.lua: 1244340566
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+unable to bind port 6600: Address already in use
+maybe MPD is still running?
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+²Ì¹úÈ¨ - ²»×°ÊÎÄãµÄÃÎ
+[playing] #57/686   0:02/4:00 (1%)
+volume: 28%   repeat: off   random: on 
+²Ì¹úÈ¨ - ²»×°ÊÎÄãµÄÃÎ
+[playing] #57/686   0:02/4:00 (1%)
+volume: 28%   repeat: off   random: on 
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+Awesome Autostart: Executing: startup.sh
+Awesome Autostart: Skipping file startup.sh~ not executable.
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+Entered rc.lua: 1244340652
+Entered rc.lua: 1244340652
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+unable to bind port 6600: Address already in use
+maybe MPD is still running?
+/home/xzap/.config/awesome/autostart/startup.sh: line 32: 22263 已放弃               exec mpd
+²Ì¹úÈ¨ - ²»×°ÊÎÄãµÄÃÎ
+[playing] #57/686   1:28/4:00 (37%)
+volume: 28%   repeat: off   random: on 
+²Ì¹úÈ¨ - ²»×°ÊÎÄãµÄÃÎ
+[playing] #57/686   1:28/4:00 (37%)
+volume: 28%   repeat: off   random: on 
+Awesome Autostart: Executing: startup.sh
+Awesome Autostart: Skipping file startup.sh~ not executable.
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:672: attempt to index global 'apptags' (a nil value)
+Entered rc.lua: 1244340815
+Entered rc.lua: 1244340815
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:691: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:691: attempt to index global 'apptags' (a nil value)
+unable to bind port 6600: Address already in use
+maybe MPD is still running?
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:691: attempt to index global 'apptags' (a nil value)
+群星.-.[2008HitFm年度百首单曲].专辑.(mp3)/59. 为何我会喜欢上妳？.mp3
+[playing] #519/686   0:11/3:20 (6%)
+volume: 28%   repeat: off   random: on 
+群星.-.[2008HitFm年度百首单曲].专辑.(mp3)/59. 为何我会喜欢上妳？.mp3
+[playing] #519/686   0:11/3:20 (6%)
+volume: 28%   repeat: off   random: on 
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:691: attempt to index global 'apptags' (a nil value)
+Awesome Autostart: Executing: startup.sh
+Awesome Autostart: Skipping file startup.sh~ not executable.
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:691: attempt to index global 'apptags' (a nil value)
+Entered rc.lua: 1244340874
+Entered rc.lua: 1244340874
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:691: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:691: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:691: attempt to index global 'apptags' (a nil value)
+unable to bind port 6600: Address already in use
+maybe MPD is still running?
+/home/xzap/.config/awesome/autostart/startup.sh: line 32:  6817 已放弃               exec mpd
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:691: attempt to index global 'apptags' (a nil value)
+群星.-.[2008HitFm年度百首单曲].专辑.(mp3)/59. 为何我会喜欢上妳？.mp3
+[playing] #519/686   1:10/3:20 (35%)
+volume: 28%   repeat: off   random: on 
+群星.-.[2008HitFm年度百首单曲].专辑.(mp3)/59. 为何我会喜欢上妳？.mp3
+[playing] #519/686   1:10/3:20 (35%)
+volume: 28%   repeat: off   random: on 
+Awesome Autostart: Executing: startup.sh
+Awesome Autostart: Skipping file startup.sh~ not executable.
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:691: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:691: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:691: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:691: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:691: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/mouse.lua:174: mousegrabber already running
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/mouse.lua:174: mousegrabber already running
+Entered rc.lua: 1244340978
+Entered rc.lua: 1244340978
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+unable to bind port 6600: Address already in use
+maybe MPD is still running?
+/home/xzap/.config/awesome/autostart/startup.sh: line 32: 15195 已放弃               exec mpd
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+群星.-.[2008HitFm年度百首单曲].专辑.(mp3)/59. 为何我会喜欢上妳？.mp3
+[playing] #519/686   2:54/3:20 (87%)
+volume: 28%   repeat: off   random: on 
+群星.-.[2008HitFm年度百首单曲].专辑.(mp3)/59. 为何我会喜欢上妳？.mp3
+[playing] #519/686   2:54/3:20 (87%)
+volume: 28%   repeat: off   random: on 
+Awesome Autostart: Executing: startup.sh
+Awesome Autostart: Skipping file startup.sh~ not executable.
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+Entered rc.lua: 1244341085
+Entered rc.lua: 1244341085
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+unable to bind port 6600: Address already in use
+maybe MPD is still running?
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+/home/xzap/.config/awesome/autostart/startup.sh: line 35: 24258 已放弃               exec mpd
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+CD8/02.纪如璟 - 值得一辈子去爱.mp3
+[playing] #75/686   1:21/21:14 (6%)
+volume: 28%   repeat: off   random: on 
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+CD8/02.纪如璟 - 值得一辈子去爱.mp3
+[playing] #75/686   1:21/21:14 (6%)
+volume: 28%   repeat: off   random: on 
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+Awesome Autostart: Executing: startup.sh
+Awesome Autostart: Skipping file startup.sh~ not executable.
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/mouse.lua:174: mousegrabber already running
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/mouse.lua:174: mousegrabber already running
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/awful/mouse.lua:174: mousegrabber already running
+Entered rc.lua: 1244341128
+Entered rc.lua: 1244341128
+unable to bind port 6600: Address already in use
+maybe MPD is still running?
+/home/xzap/.config/awesome/autostart/startup.sh: line 35: 28078 已放弃               exec mpd
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+CD8/02.纪如璟 - 值得一辈子去爱.mp3
+[playing] #75/686   2:05/21:14 (10%)
+volume: 28%   repeat: off   random: on 
+CD8/02.纪如璟 - 值得一辈子去爱.mp3
+[playing] #75/686   2:05/21:14 (10%)
+volume: 28%   repeat: off   random: on 
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+Awesome Autostart: Executing: startup.sh
+Awesome Autostart: Skipping file startup.sh~ not executable.
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+Entered rc.lua: 1244341405
+Entered rc.lua: 1244341405
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+unable to bind port 6600: Address already in use
+maybe MPD is still running?
+/home/xzap/.config/awesome/autostart/startup.sh: line 32: 20546 已放弃               exec mpd
+陈淑桦 - 08 梦醒时分
+[playing] #567/686   2:54/4:08 (70%)
+volume: 28%   repeat: off   random: on 
+陈淑桦 - 08 梦醒时分
+[playing] #567/686   2:54/4:08 (70%)
+volume: 28%   repeat: off   random: on 
+Awesome Autostart: Executing: startup.sh
+Awesome Autostart: Skipping file startup.sh~ not executable.
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+XDXF数据解析插件加载成功。
+HTML数据解析插件加载成功。
+Dict.cn网络词典插件加载成功。
+Man虚拟词典插件加载成功。
+PowerWord数据解析插件加载成功。
+WordNet数据解析插件加载成功。
+拼写检查插件加载成功。
+Wiki数据解析插件加载成功。
+QQWry插件加载成功。
+WordNet词典渲染插件加载成功。
+bookname: computer-dictionary , wordcount 5144
+bookname: 朗道英汉字典5.0 , wordcount 435468
+bookname: 朗道汉英字典5.0 , wordcount 405719
+bookname: 牛津现代英汉双解词典 , wordcount 39429
+bookname: 21世纪英汉汉英双向词典 , wordcount 213723
+bookname: 现代汉语词典 , wordcount 57691
+bookname: 汉语成语词典 , wordcount 13001
+bookname: 计算机词汇 , wordcount 6131
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+Entered rc.lua: 1244341641
+Entered rc.lua: 1244341641
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+ÃÎÖ®ÂÃ - 02 Ï¦Ñôºì
+[playing] #406/686   2:42/4:05 (66%)
+volume: 28%   repeat: off   random: on 
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+unable to bind port 6600: Address already in use
+maybe MPD is still running?
+ÃÎÖ®ÂÃ - 02 Ï¦Ñôºì
+[playing] #406/686   2:42/4:05 (66%)
+volume: 28%   repeat: off   random: on 
+Awesome Autostart: Executing: startup.sh
+Awesome Autostart: Skipping file startup.sh~ not executable.
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: ...sr/share/awesome/lib/awful/layout/suit/magnifier.lua:58: attempt to index local 'focus' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: ...sr/share/awesome/lib/awful/layout/suit/magnifier.lua:58: attempt to index local 'focus' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+Entered rc.lua: 1244341917
+Entered rc.lua: 1244341917
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+unable to bind port 6600: Address already in use
+maybe MPD is still running?
+/home/xzap/.config/awesome/autostart/startup.sh: line 32:  4092 已放弃               exec mpd
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+ÕÅÑ§ÓÑ - Ã¿Ìì°®Äã¶àÒ»Ð©
+[playing] #48/686   3:12/4:42 (68%)
+volume: 28%   repeat: off   random: on 
+ÕÅÑ§ÓÑ - Ã¿Ìì°®Äã¶àÒ»Ð©
+[playing] #48/686   3:12/4:42 (68%)
+volume: 28%   repeat: off   random: on 
+Awesome Autostart: Executing: startup.sh
+Awesome Autostart: Skipping file startup.sh~ not executable.
+W: awesome: luaA_dofunction:264: error running function: /usr/share/awesome/lib/shifty.lua:296: attempt to call field 'spawn_with_shell' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+W: awesome: draw_text_context_init:177: cannot parse pango markup: Error on line 1: Entity did not end with a semicolon; most likely you used an ampersand character without intending to start an entity - escape ampersand as &amp;
+W: awesome: draw_text_context_init:177: cannot parse pango markup: Error on line 1: Entity did not end with a semicolon; most likely you used an ampersand character without intending to start an entity - escape ampersand as &amp;
+W: awesome: draw_text_context_init:177: cannot parse pango markup: Error on line 1: Entity did not end with a semicolon; most likely you used an ampersand character without intending to start an entity - escape ampersand as &amp;
+合輯 - 被遺忘的時光西洋篇 2 愛的力量 (VBR)/14.Kiss Me(親吻我) - 林凡.MP3
+[playing] #298/686   0:00/3:14 (0%)
+volume: 28%   repeat: off   random: on 
+合輯 - 被遺忘的時光西洋篇 2 愛的力量 (VBR)/14.Kiss Me(親吻我) - 林凡.MP3
+[playing] #298/686   0:10/3:14 (5%)
+volume: 34%   repeat: off   random: on 
+合輯 - 被遺忘的時光西洋篇 2 愛的力量 (VBR)/14.Kiss Me(親吻我) - 林凡.MP3
+[playing] #298/686   0:10/3:14 (5%)
+volume: 37%   repeat: off   random: on 
+合輯 - 被遺忘的時光西洋篇 2 愛的力量 (VBR)/14.Kiss Me(親吻我) - 林凡.MP3
+[playing] #298/686   0:10/3:14 (5%)
+volume: 37%   repeat: off   random: on 
+合輯 - 被遺忘的時光西洋篇 2 愛的力量 (VBR)/14.Kiss Me(親吻我) - 林凡.MP3
+[playing] #298/686   0:10/3:14 (5%)
+volume: 40%   repeat: off   random: on 
+合輯 - 被遺忘的時光西洋篇 2 愛的力量 (VBR)/14.Kiss Me(親吻我) - 林凡.MP3
+[playing] #298/686   0:10/3:14 (5%)
+volume: 46%   repeat: off   random: on 
+合輯 - 被遺忘的時光西洋篇 2 愛的力量 (VBR)/14.Kiss Me(親吻我) - 林凡.MP3
+[playing] #298/686   0:10/3:14 (5%)
+volume: 49%   repeat: off   random: on 
+合輯 - 被遺忘的時光西洋篇 2 愛的力量 (VBR)/14.Kiss Me(親吻我) - 林凡.MP3
+[playing] #298/686   0:10/3:14 (5%)
+volume: 52%   repeat: off   random: on 
+合輯 - 被遺忘的時光西洋篇 2 愛的力量 (VBR)/14.Kiss Me(親吻我) - 林凡.MP3
+[playing] #298/686   0:10/3:14 (5%)
+volume: 52%   repeat: off   random: on 
+合輯 - 被遺忘的時光西洋篇 2 愛的力量 (VBR)/14.Kiss Me(親吻我) - 林凡.MP3
+[playing] #298/686   0:11/3:14 (6%)
+volume: 61%   repeat: off   random: on 
+合輯 - 被遺忘的時光西洋篇 2 愛的力量 (VBR)/14.Kiss Me(親吻我) - 林凡.MP3
+[playing] #298/686   0:11/3:14 (6%)
+volume: 64%   repeat: off   random: on 
+合輯 - 被遺忘的時光西洋篇 2 愛的力量 (VBR)/14.Kiss Me(親吻我) - 林凡.MP3
+[playing] #298/686   0:11/3:14 (6%)
+volume: 64%   repeat: off   random: on 
+合輯 - 被遺忘的時光西洋篇 2 愛的力量 (VBR)/14.Kiss Me(親吻我) - 林凡.MP3
+[playing] #298/686   0:11/3:14 (6%)
+volume: 67%   repeat: off   random: on 
+合輯 - 被遺忘的時光西洋篇 2 愛的力量 (VBR)/14.Kiss Me(親吻我) - 林凡.MP3
+[playing] #298/686   0:11/3:14 (6%)
+volume: 70%   repeat: off   random: on 
+合輯 - 被遺忘的時光西洋篇 2 愛的力量 (VBR)/14.Kiss Me(親吻我) - 林凡.MP3
+[playing] #298/686   0:11/3:14 (6%)
+volume: 70%   repeat: off   random: on 
+合輯 - 被遺忘的時光西洋篇 2 愛的力量 (VBR)/14.Kiss Me(親吻我) - 林凡.MP3
+[playing] #298/686   0:11/3:14 (6%)
+volume: 76%   repeat: off   random: on 
+合輯 - 被遺忘的時光西洋篇 2 愛的力量 (VBR)/14.Kiss Me(親吻我) - 林凡.MP3
+[playing] #298/686   0:11/3:14 (6%)
+volume: 82%   repeat: off   random: on 
+合輯 - 被遺忘的時光西洋篇 2 愛的力量 (VBR)/14.Kiss Me(親吻我) - 林凡.MP3
+[playing] #298/686   0:11/3:14 (6%)
+volume: 82%   repeat: off   random: on 
+合輯 - 被遺忘的時光西洋篇 2 愛的力量 (VBR)/14.Kiss Me(親吻我) - 林凡.MP3
+[playing] #298/686   0:11/3:14 (6%)
+volume: 82%   repeat: off   random: on 
+¶¡ÎÄç÷ - Æðïw
+[playing] #235/686   0:00/4:26 (0%)
+volume: 82%   repeat: off   random: on 
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD1].专辑.(mp3)/10.情逢敵手.MP3
+[paused]  #600/686   0:45/3:01 (25%)
+volume: 82%   repeat: off   random: on 
+林忆莲 - 04 伤痕
+[playing] #563/686   0:00/6:09 (0%)
+volume: 82%   repeat: off   random: on 
+林一峰 - 遇见
+[playing] #37/686   0:00/2:49 (0%)
+volume: 82%   repeat: off   random: on 
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:693: attempt to index global 'apptags' (a nil value)
+Entered rc.lua: 1244348066
+Entered rc.lua: 1244348066
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+unable to bind port 6600: Address already in use
+maybe MPD is still running?
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+林一峰 - 遇见
+[playing] #37/686   1:18/2:49 (46%)
+volume: 82%   repeat: off   random: on 
+林一峰 - 遇见
+[playing] #37/686   1:18/2:49 (46%)
+volume: 82%   repeat: off   random: on 
+Awesome Autostart: Executing: startup.sh
+Awesome Autostart: Skipping file startup.sh~ not executable.
+林一峰 - 遇见
+[playing] #37/686   1:49/2:49 (64%)
+volume: 76%   repeat: off   random: on 
+林一峰 - 遇见
+[playing] #37/686   1:49/2:49 (64%)
+volume: 73%   repeat: off   random: on 
+林一峰 - 遇见
+[playing] #37/686   1:49/2:49 (64%)
+volume: 73%   repeat: off   random: on 
+林一峰 - 遇见
+[playing] #37/686   1:49/2:49 (64%)
+volume: 70%   repeat: off   random: on 
+林一峰 - 遇见
+[playing] #37/686   1:49/2:49 (64%)
+volume: 67%   repeat: off   random: on 
+林一峰 - 遇见
+[playing] #37/686   1:49/2:49 (64%)
+volume: 61%   repeat: off   random: on 
+林一峰 - 遇见
+[playing] #37/686   1:50/2:49 (65%)
+volume: 61%   repeat: off   random: on 
+林一峰 - 遇见
+[playing] #37/686   1:50/2:49 (65%)
+volume: 58%   repeat: off   random: on 
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD1].专辑.(mp3)/15.日不落.MP3
+[playing] #605/686   2:58/3:49 (78%)
+volume: 64%   repeat: off   random: on 
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD1].专辑.(mp3)/15.日不落.MP3
+[playing] #605/686   2:58/3:49 (78%)
+volume: 67%   repeat: off   random: on 
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD1].专辑.(mp3)/15.日不落.MP3
+[playing] #605/686   2:58/3:49 (78%)
+volume: 67%   repeat: off   random: on 
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD1].专辑.(mp3)/15.日不落.MP3
+[playing] #605/686   2:58/3:49 (78%)
+volume: 73%   repeat: off   random: on 
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD1].专辑.(mp3)/15.日不落.MP3
+[playing] #605/686   2:58/3:49 (78%)
+volume: 76%   repeat: off   random: on 
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD1].专辑.(mp3)/15.日不落.MP3
+[playing] #605/686   2:58/3:49 (78%)
+volume: 76%   repeat: off   random: on 
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD1].专辑.(mp3)/15.日不落.MP3
+[playing] #605/686   3:09/3:49 (83%)
+volume: 76%   repeat: off   random: off
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD2].专辑.(mp3)/16.慣性背叛.MP3
+[playing] #606/686   0:00/4:31 (0%)
+volume: 76%   repeat: off   random: off
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD1].专辑.(mp3)/15.日不落.MP3
+[playing] #605/686   0:00/3:49 (0%)
+volume: 76%   repeat: off   random: off
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD1].专辑.(mp3)/14.墓仔埔也敢去.MP3
+[playing] #604/686   0:00/4:15 (0%)
+volume: 76%   repeat: off   random: off
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD1].专辑.(mp3)/15.日不落.MP3
+[playing] #605/686   0:00/3:49 (0%)
+volume: 76%   repeat: off   random: off
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD1].专辑.(mp3)/14.墓仔埔也敢去.MP3
+[playing] #604/686   0:00/4:15 (0%)
+volume: 76%   repeat: off   random: off
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD1].专辑.(mp3)/13.愛無赦.MP3
+[playing] #603/686   0:00/3:53 (0%)
+volume: 76%   repeat: off   random: off
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD1].专辑.(mp3)/13.愛無赦.MP3
+[playing] #603/686   0:03/3:53 (1%)
+volume: 79%   repeat: off   random: off
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD1].专辑.(mp3)/13.愛無赦.MP3
+[playing] #603/686   0:03/3:53 (1%)
+volume: 82%   repeat: off   random: off
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD1].专辑.(mp3)/13.愛無赦.MP3
+[playing] #603/686   0:04/3:53 (2%)
+volume: 85%   repeat: off   random: off
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD1].专辑.(mp3)/13.愛無赦.MP3
+[playing] #603/686   0:04/3:53 (2%)
+volume: 88%   repeat: off   random: off
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD2].专辑.(mp3)/17.聽說愛情回來過.MP3
+[playing] #607/686   2:11/5:07 (43%)
+volume: 82%   repeat: off   random: off
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD2].专辑.(mp3)/17.聽說愛情回來過.MP3
+[playing] #607/686   2:11/5:07 (43%)
+volume: 79%   repeat: off   random: off
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD2].专辑.(mp3)/17.聽說愛情回來過.MP3
+[playing] #607/686   2:11/5:07 (43%)
+volume: 76%   repeat: off   random: off
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD2].专辑.(mp3)/17.聽說愛情回來過.MP3
+[playing] #607/686   2:11/5:07 (43%)
+volume: 73%   repeat: off   random: off
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD2].专辑.(mp3)/17.聽說愛情回來過.MP3
+[playing] #607/686   2:11/5:07 (43%)
+volume: 73%   repeat: off   random: off
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD2].专辑.(mp3)/17.聽說愛情回來過.MP3
+[playing] #607/686   2:11/5:07 (43%)
+volume: 64%   repeat: off   random: off
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD2].专辑.(mp3)/17.聽說愛情回來過.MP3
+[playing] #607/686   2:11/5:07 (43%)
+volume: 64%   repeat: off   random: off
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD2].专辑.(mp3)/17.聽說愛情回來過.MP3
+[playing] #607/686   2:11/5:07 (43%)
+volume: 61%   repeat: off   random: off
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD2].专辑.(mp3)/17.聽說愛情回來過.MP3
+[playing] #607/686   2:11/5:07 (43%)
+volume: 55%   repeat: off   random: off
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD2].专辑.(mp3)/17.聽說愛情回來過.MP3
+[playing] #607/686   2:11/5:07 (43%)
+volume: 55%   repeat: off   random: off
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD2].专辑.(mp3)/17.聽說愛情回來過.MP3
+[playing] #607/686   2:11/5:07 (43%)
+volume: 55%   repeat: off   random: off
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD2].专辑.(mp3)/17.聽說愛情回來過.MP3
+[paused]  #607/686   2:12/5:07 (43%)
+volume: 55%   repeat: off   random: off
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+Entered rc.lua: 1244350458
+Entered rc.lua: 1244350458
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+unable to bind port 6600: Address already in use
+maybe MPD is still running?
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD2].专辑.(mp3)/17.聽說愛情回來過.MP3
+[playing] #607/686   2:12/5:07 (43%)
+volume: 55%   repeat: off   random: on 
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD2].专辑.(mp3)/17.聽說愛情回來過.MP3
+[playing] #607/686   2:12/5:07 (43%)
+volume: 55%   repeat: off   random: on 
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+Awesome Autostart: Executing: startup.sh
+Awesome Autostart: Skipping file startup.sh~ not executable.
+蔡依林.-.[J世纪Jeneration大牌新曲＋精选盘2006-2009.CD2].专辑.(mp3)/17.聽說愛情回來過.MP3
+[paused]  #607/686   2:14/5:07 (44%)
+volume: 55%   repeat: off   random: on 
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+杂锦合辑《被遗忘的时光》/27.哭砂.mp3
+[playing] #368/686   0:00/4:40 (0%)
+volume: 55%   repeat: off   random: on 
+杂锦合辑《被遗忘的时光》/27.哭砂.mp3
+[paused]  #368/686   3:13/4:40 (69%)
+volume: 55%   repeat: off   random: on 
+Greasemonkey getFirebugConsole() error:
+(new TypeError("chromeWin.Firebug is undefined", "file:///home/xzap/.mozilla/firefox/m95qsiq4.default/extensions/%7Be4a8a97b-f2ed-450b-b12d-ee082ba24781%7D/components/greasemonkey.js", 392))
+Greasemonkey getFirebugConsole() error:
+(new TypeError("chromeWin.Firebug is undefined", "file:///home/xzap/.mozilla/firefox/m95qsiq4.default/extensions/%7Be4a8a97b-f2ed-450b-b12d-ee082ba24781%7D/components/greasemonkey.js", 392))
+Greasemonkey getFirebugConsole() error:
+(new TypeError("chromeWin.Firebug is undefined", "file:///home/xzap/.mozilla/firefox/m95qsiq4.default/extensions/%7Be4a8a97b-f2ed-450b-b12d-ee082ba24781%7D/components/greasemonkey.js", 392))
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)
+W: awesome: luaA_dofunction:264: error running function: /home/xzap/.config/awesome/rc.lua:692: attempt to index global 'apptags' (a nil value)

@@ -1,0 +1,31 @@
+Xft.dpi:96
+URxvt.preeditType:OverTheSpot
+URxvt.imFont:fixed
+
+URxvt.geometry:66X22
+URxvt.visualBell:true
+!!URxvt.inheritPixmap:true
+URxvt.cursorColor:green
+URxvt.foreground:lightgray
+URxvt.background:black
+URxvt.tintColor:lightgray
+URxvt.shading:70
+
+! normal setting
+URxvt.termName:rxvt-unicode
+URxvt.cursorBlink:false
+URxvt.saveLines:65535
+URxvt.scrollBar_right:true
+URxvt.scrollTtyKeypress:true
+URxvt.scrollTtyOutput::false
+URxvt.scrollWithBuffer:false
+URxvt.scrollstyle:plain
+URxvt.inputMethod:ibus
+URxvt.font: -*-fixed-medium-r-*--18-*-*-*-*-*-iso10646-1,\
+xft:WenQuanYi Bitmap Song:pixelsize=14:antialias=false
+URxvt.preeditType:Root
+
+
+URxvt.colorBD:yellow
+!!URxvt.colorUL:green
+
