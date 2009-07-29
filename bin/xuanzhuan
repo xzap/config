@@ -1,0 +1,38 @@
+#!/bin/bash
+# 把图片旋转的脚本
+E_NOPIC=65
+yyy=`date +%Y%m%d%H%M%S`
+fff="*.jpg
+*.JPG
+*.png"
+if [ $1 ] 
+then 
+  h=$1 
+else 
+  h=90
+fi
+
+xxx=`ls $fff 2>/dev/null|wc -l`
+if [ $xxx = "0" ]
+then 
+echo "没有图片"
+exit $E_NOPIC
+else
+yyy="旋转$h度_"$yyy
+mkdir $yyy
+j=1
+echo "找到${xxx}张图片"
+echo "将把这些图片旋转$h度，请稍候……"
+for i in $fff
+do
+if [ $i == '*.JPG' ]||[ $i == '*.jpg' ]||[ $i == '*.png' ]
+then 
+continue
+fi 
+echo "正在处理第${j}/${xxx}张图片……"
+convert -rotate $h $i $yyy/$i 
+((j++))
+done
+echo "全部完成了"
+exit 0
+fi

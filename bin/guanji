@@ -1,0 +1,34 @@
+#!/bin/bash
+# 关机的脚本
+echo  '   请输入数字选择'
+echo  "   1、关机"
+echo  "   2、重启"
+echo  "   3、延时关机"
+read num
+foo=`gksudo -u root -k -m "enter your password for root terminal access" /bin/echo "got r00t?"`
+case "$num" in
+"")
+echo "你没输入数字"
+exit 1
+;;
+1)
+echo "系统即将关闭"
+sudo shutdown -h now 
+;;
+2)
+echo "系统即将重启"
+sudo shutdown -r now 
+;;
+3)
+echo "请输入时间，如在6时30分的时候关机输入6:30，24小时时间制"
+read ttime
+
+echo -en '\033[0;33;1m系统将在\033[0m'
+echo -en "\033[0;44;1m$ttime\033[0m"
+echo -e  '\033[0;33;1m关闭……，取消请按ctrl+c\033[0m'
+sudo shutdown -h $ttime
+;;
+*)
+echo "你按了其他键，程序退出了"
+;;
+esac

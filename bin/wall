@@ -1,0 +1,33 @@
+#!/bin/bash
+# 自动更换openbox的壁纸
+E_NOPIC=65
+fff="*.jpg
+*.JPG
+*.png"
+# 存放壁纸的路径
+walldir=/home/xzap/usr/wallpaper
+# 检查是否有参数，没有参数默认更换时间为5秒。
+if [ $1 ] 
+then 
+  h=$1 
+else 
+  h=5
+fi
+xxx=`ls $walldir/$fff 2>/dev/null|wc -l`
+if [ $xxx = "0" ]
+then 
+exit $E_NOPIC
+else
+while :
+do
+for i in $walldir/$fff
+do
+if [ "$i" == '*.JPG' ]||[ "$i" == '*.jpg' ]||[ "$i" == '*.png' ]
+then 
+continue
+fi 
+feh --bg-scale "$i"
+sleep $h
+done
+done
+fi

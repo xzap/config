@@ -1,0 +1,11 @@
+#!/bin/bash
+#解压缩rar文件
+mkdir rar
+for i in *.rar
+do
+j=${i%.rar}
+
+mkdir $j
+mv $i $j/$i
+(cd $j;unrar x $i;mv $i ../rar/$i;cd ..)
+done
