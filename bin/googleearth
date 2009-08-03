@@ -1,0 +1,122 @@
+/home/xzap/usr/google-earth//googleearths -n -Cc -fF -I-10 -O-10 -D1 -t-3 -l-4 -r4 &
+#xcompmgr -c -t-5 -l-5 -r4 -o.55 &
+exit 0
+=============
+
+        主要就是根据参数来输出需要的信息
+	-riqi		     这个是输出日期的
+	-nongli=""	     显示农历
+	-chengshi=""         查询的城市
+	-tianqi=""           天气
+	-qiwen=""            温度
+	-fengxiang=""        风向
+	-ziwaixian=""        紫外线
+	-chuanyi=""          穿衣指数
+	-icon=""             显示的图标
+
+    ===========================================
+
+EOF
+}
+usage
+name[$k]=`basename "${f_file[$k]}"`
+f_dir[$k]=`dirname "${f_file[$k]}"`
+f_time[$k]=`stat "${f_file[$k]}"|tail -1|awk '{print $2,"_",$3}'|sed 's/ //g'|sed 's/\.00*//g'`
+f_all[$k]="${f_name[$k]}"" ""${f_dir[$k]}"" ""${f_file[$k]}"" ""${f_time[$k]}"
+done
+while :
+do
+arg=`echo ${f_all[@]}|xargs zenity --width "800" --height "600" --list --print-column 3 --hide-column 3 --column "文件名" --column "目录" --column "路径" --column "时间"`
+echo $arg
+if [ -z $arg ]
+then
+break
+exit 65
+else
+$f_exe "$arg"
+fi
+done
+
+=350
+#隔多大距离绘制下一行（此距离包括本行的宽度）
+TxtYIncr=30
+#天气图标绘制的位置
+PicGeometry="+150+80"
+#PicGeometry="+650+80"
+#壁纸更换的时间间隔（默认 30 分钟 30m） 
+ChangeTime="1h"
+
+WeatherCN=("晴" "多云" "阴" "雨" "雷阵雨" "雾" "雪" "雨夹雪")
+WeatherEN=("sun" "suncloud" "cloud" "rain" "storm" "fog" "snow" "snowrain")
+temp=`cat /home/xzap/.fehbg`
+walltemp=`echo "$temp"|cut -d " " -f 3`
+if [ "$walltemp" != "$Wallpaper" ]
+then
+cp "$walltemp" "$BackPic"
+fi
+GET_WEATHER() {
+	[ -z "${Wid}" ] && \
+	if [ -f "/dev/shm/city" ] ;then
+		Wid="$(cat /dev/shm/city)"
+	else
+		Wid="`wget -q -O - 'http://www.265.com/lookupcity'|awk -F "'" '{print $2}'`"
+		echo ${Wid}>/dev/shm/city
+	fi
+	[ ! -z "${Wid}" ] && WeatherTxt="`w3m -dump "http://wap.weather.com.cn/wap/${Wid}/h24/"`"
+}
+
+GEN_DRAW_TEXT() {
+	[ -z "${WeatherTxt}" ] && GET_WEATHER
+	if [ -z "${WeatherTxt}" ]; then
+		echo "未能获取天气 :("
+	else
+
+		echo "${WeatherTxt}"|sed -n "2p"|sed 's/\ .*$//'
+		echo "${WeatherTxt}"|sed -n "3p"|sed 's/\ .*$//'
+		echo "${WeatherTxt}"|sed -n "4p"|sed 's/\ .*$//'
+		echo "${WeatherTxt}"|sed -n "5,9p"
+	fi \
+	|sed "s/^.*$/-draw \\\'text POSITION \\\"&\\\"\\\'/" \
+	|while read line; do 
+		echo "$line"|sed "s/POSITION/$TxtPosX,$TxtPosY/"
+		((TxtPosY+=$TxtYIncr))
+	done|tr "\n" " "
+}
+
+GEN_WEATHER_ICON() {
+	local tmp weathercn index 
+	[ -z "${WeatherTxt}" ] && GET_WEATHER
+	[ -z "${WeatherTxt}" ] || tmp="`echo "${WeatherTxt}"|sed -n "5p"`"
+	j=0; k=0
+	for i in ${WeatherCN[@]}; do
+		[ "${tmp//$i}" != "$tmp" ] && weathercn[$j]="$i" && index[$j]="$k" && ((j++))
+		((k++))
+	done
+	[ "${#weathercn[@]}" -eq 0 ] && Weather[0]="unknown"
+	[ "${#weathercn[@]}" -eq 1 ] && Weather[0]="${WeatherEN[${index[0]}]}"
+	[ "${#weathercn[@]}" -eq 2 ] && \
+	if [ "`echo $tmp|grep "${weathercn[0]}转"`" ];then
+		Weather[0]="${WeatherEN[${index[0]}]}"
+		Weather[1]="${WeatherEN[${index[1]}]}"
+	else
+		Weather[0]="${WeatherEN[${index[1]}]}"
+		Weather[1]="${WeatherEN[${index[0]}]}"
+	fi
+	[ "${#weathercn[@]}" -eq 3 ] && \
+	{
+		Weather[0]="${WeatherEN[${index[0]}]}"
+		Weather[1]="${WeatherEN[${index[2]}]}"
+	}
+	if [ "${#Weather[@]}" -ge 2 ]; then
+	   convert +append "$Icondir/${Weather[0]}.png" "$Icondir/${Weather[1]}.png" /dev/shm/weathericon.png
+	else
+	   ln -sf "$Icondir/${Weather[0]}.png" /dev/shm/weathericon.png
+	fi
+}
+
+GEN_WALLPAPWE() {
+	GEN_WEATHER_ICON
+	[ -f $BackPic ] || BackPic="$Icondir/background.jpg"
+	if [ "$DrawText" = "yes" ]; then
+		draw="convert -font \"$Font\" -fill $TxtColor -pointsize $FontSize `GEN_DRAW_TEN튷\"$BackP�ۊ� \"/dev/shm/backpictmp.png\""
+		eval "$d���A

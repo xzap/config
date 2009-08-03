@@ -1,0 +1,224 @@
+#!/bin/bash
+
+#需要安装 w3m
+#城市代码可在 http://weather.265.com 上查询，是个5位的数字
+
+#这个脚本主要是想用在conky中的显示。我的conky里是这样写的。
+#${color #98c2c7}${execi 3600 ~/bin/tianqi -chengshi}天气:
+#${execi 3600 ~/bin/tianqi -nongli}${color}
+#${voffset 10}${font Weather:size=44}e${font}${color}${voffset -40}${offset 18}${execi 3600 ~/bin/tianqi -tianqi}${voffset 20}${offset -35}${execi 3600 ~/bin/tianqi -qiwen}${voffset 20}${offset -62}${execi 3600 ~/bin/tianqi -fengxiang}
+#编写：xzap 
+#参考xiooli天气脚本改编。
+#=================正式开始=========================
+
+#这儿是城市代码，须自己改，未赋值会自动查询，\
+#不过自动查询只能到市级不能到县，自己查询可以到大部分县级的。
+Wid=58451
+
+w_riqi=""
+w_nongli=""
+w_chengshi=""
+w_tianqi=""
+w_qiwen=""
+w_fengxiang=""
+w_ziwaixian=""
+w_chuanyi=""
+w_icon=""
+wshuchu=""
+
+
+usage(){
+echo -e "\tUsage: `basename $0` 出错了"
+cat <<EOF
+
+   =============下面是说明===============
+
+        主要就是根据参数来输出需要的信息
+     可以同时加几个参数。
+     如：tianqi -riqi -nongli -chengshi
+
+	-riqi	     这个是输出日期的
+	-nongli	     显示农历
+	-chengshi    查询的城市
+	-tianqi      天气
+	-qiwen       温度
+	-fengxiang   风向
+	-ziwaixian   紫外线
+	-chuanyi     穿衣指数
+	-icon        显示的图标
+        -a	     全部输出
+        -t	     带格式的全部输出
+                     和不带参数相同
+
+    
+   =============说明结束================
+              
+EOF
+}
+
+WeatherCN=("晴" "多云" "阴" "雨" "雷阵雨" "雾" "雪" "雨夹雪")
+WeatherEN=("a" "c" "e" "h" "i" "d" "j" "k")
+GET_WEATHER() {
+	[ -z "${Wid}" ] && \
+	if [ -f "/dev/shm/city" ] ;then
+		Wid="$(cat /dev/shm/city)"
+	else
+		Wid="`wget -q -O - 'http://www.265.com/lookupcity'|awk -F "'" '{print $2}'`"
+		echo ${Wid}>/dev/shm/city
+	fi
+	[ ! -z "${Wid}" ] && WeatherTxt="`w3m -dump "http://wap.weather.com.cn/wap/${Wid}/h24/"`"
+}
+
+GEN_DRAW_TEXT() {
+	[ -z "${WeatherTxt}" ] && GET_WEATHER
+	if [ -z "${WeatherTxt}" ]; then
+		w_tianqi= "未能获取天气 :("
+	else
+		w_tianqi=`echo "${WeatherTxt}"|sed -n "2p"|sed 's/\ .*$//'`
+		w_riqi=`echo "${WeatherTxt}"|sed -n "2p"|sed 's/\ .*$//'`
+		w_nongli=`echo "${WeatherTxt}"|sed -n "3p"|sed 's/\ .*$//'|tr -d "[]"`
+		w_chengshi=`echo "${WeatherTxt}"|sed -n "4p"|sed 's/\ .*$//'`
+		w_tianqi=`echo "${WeatherTxt}"|sed -n "5p"|sed 's/\ .*$//'|awk -F "：" '{print $2}'`
+		w_qiwen=`echo "${WeatherTxt}"|sed -n "6p"|sed 's/\ .*$//'|awk -F "：" '{print $2}'`
+		w_fengxiang=`echo "${WeatherTxt}"|sed -n "7p"|sed 's/\ .*$//'|awk -F "：" '{print $2}'`
+		w_ziwaixian=`echo "${WeatherTxt}"|sed -n "8p"|sed 's/\ .*$//'|awk -F "：" '{print $2}'`
+		w_chuanyi=`echo "${WeatherTxt}"|sed -n "9p"|sed 's/\ .*$//'|awk -F "：" '{print $2}'`	
+fi
+}
+
+GEN_WEATHER_ICON() {
+	local tmp weathercn index 
+	[ -z "${WeatherTxt}" ] && GET_WEATHER
+	[ -z "${WeatherTxt}" ] || tmp="`echo "${WeatherTxt}"|sed -n "5p"`"
+	j=0; k=0
+	for i in ${WeatherCN[@]}; do
+		[ "${tmp//$i}" != "$tmp" ] && weathercn[$j]="$i" && index[$j]="$k" && ((j++))
+		((k++))
+	done
+	[ "${#weathercn[@]}" -eq 0 ] && Weather[0]="unknown"
+	[ "${#weathercn[@]}" -eq 1 ] && Weather[0]="${WeatherEN[${index[0]}]}"&& w_icon="${Weather[0]}"
+	[ "${#weathercn[@]}" -eq 2 ] && \
+	if [ "`echo $tmp|grep "${weathercn[0]}转"`" ];then
+		Weather[0]="${WeatherEN[${index[0]}]}"
+		Weather[1]="${WeatherEN[${index[1]}]}"
+		w_icon="${Weather[0]}${Weather[1]}"
+	elif [ "`echo $tmp|grep "${weathercn[1]}转"`" ];then
+		Weather[0]="${WeatherEN[${index[1]}]}"
+		Weather[1]="${WeatherEN[${index[0]}]}"
+		w_icon="${Weather[0]}${Weather[1]}"
+	else 
+		Weather[0]="${WeatherEN[${index[1]}]}"
+		w_icon="${Weather[0]}"
+	fi
+	[ "${#weathercn[@]}" -eq 3 ] && \
+	{
+		Weather[0]="${WeatherEN[${index[0]}]}"
+		Weather[1]="${WeatherEN[${index[2]}]}"
+		w_icon="${Weather[0]}${Weather[1]}"
+
+	}
+}
+if [ ! $1 ] 
+then
+GET_WEATHER
+		GEN_WEATHER_ICON
+		GEN_DRAW_TEXT
+			echo -e "\t日期：\t$w_riqi\n\t\t$w_nongli\n\t城市：\t$w_chengshi\n\t天气：\t$w_tianqi\n\t温度：\t$w_qiwen\n\t风向：\t$w_fengxiang\n\t穿衣指数：\t$w_chuanyi\n\t紫外线指数：\t$w_ziwaixian"
+                exit 0
+fi
+
+for arg in $@
+do
+case $arg in 
+	-riqi)
+		:
+	;;
+	-nongli)
+		:
+	;;
+	-chengshi)
+		:
+	;;
+	-tianqi)
+		:
+	;;
+	-qiwen)
+		:
+	;;
+	-fengxiang)
+		:
+	;;
+	-ziwaixian)
+		:
+	;;
+	-chuanyi)
+		:
+	;;
+	-icon)
+		:
+	;;
+	-a)
+        	GET_WEATHER
+		GEN_WEATHER_ICON
+		GEN_DRAW_TEXT
+		echo "$w_riqi$w_nongli$w_chengshi$w_tianqi$w_qiwen$w_fengxiang"
+                exit 0
+                
+	;;
+	-t)
+		GET_WEATHER
+		GEN_WEATHER_ICON
+		GEN_DRAW_TEXT
+		echo -e "\t日期：\t$w_riqi\n\t\t$w_nongli\n\t城市：\t$w_chengshi\n\t天气：\t$w_tianqi\n\t温度:\t$w_qiwen\n\t风向：\t$w_fengxiang\n\t穿衣指数：\t$w_chuanyi\n\t紫外线指数：\t$w_ziwaixian"
+                exit 0
+	;;
+       	*)
+
+		usage
+		exit 65
+	;;
+esac 
+done
+
+GET_WEATHER
+GEN_WEATHER_ICON
+GEN_DRAW_TEXT
+for arg in $@
+do
+
+case $arg in 
+	-riqi)
+
+		wshuchu+=$w_riqi
+	;;
+	-nongli)
+		wshuchu+=$w_nongli
+	;;
+	-chengshi)
+		wshuchu+=$w_chengshi
+	;;
+	-tianqi)
+		wshuchu+=$w_tianqi
+	;;
+	-qiwen)
+		wshuchu+=$w_qiwen
+	;;
+	-fengxiang)
+		wshuchu+=$w_fengxiang
+	;;
+	-ziwaixian)
+		wshuchu+=$w_ziwaixian
+	;;
+	-chuanyi)
+		wshuchu+=$w_chuanyi
+	;;
+	-icon)
+		wshuchu+=$w_icon
+	;;
+       	*)
+		usage
+	;;
+esac 
+done
+
+echo $wshuchu

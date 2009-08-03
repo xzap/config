@@ -33,7 +33,7 @@ fi
 echo "正在处理第${j}/${xxx}张图片……"
 convert -resize $h $i $yyy/$i 
 ((j++))
-done
+done 
 echo "全部完成了,请到原目录下的\"$yyy\"目录中查看"
 exit 0
 fi
