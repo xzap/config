@@ -1,5 +1,8 @@
 #!/bin/bash
-cp $1 /home/xzap/git/config
+if [$1]
+	then
+	cp -R $1 /home/xzap/git/config
+fi
 cd /home/xzap/git/config
 echo "进入git目录"
 echo "添加文件"
