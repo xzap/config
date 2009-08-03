@@ -1,0 +1,13 @@
+#!/bin/bash
+cp $1 /home/xzap/git/config
+cd /home/xzap/git/config
+echo "进入git目录"
+echo "添加文件"
+for i in *;do git add $i;done
+echo "添加标示"
+git commit -m 'first commit'
+git remote add origin git@github.com:xzap/config.git
+echo "开始上传"
+git push origin master
+echo "完成，返回旧目录"
+cd $OLDPWD
