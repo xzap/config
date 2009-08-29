@@ -1,0 +1,36 @@
+#!/bin/bash
+#将目录中文件根据输入的字符或者目录名改名的小脚本
+cat <<EOF
+"请输入想要作为前缀的字符，直接按回车将以目录名进行改名."
+EOF
+read wname
+if [ $wname ]
+then :
+else
+wname=$(basename `pwd`)
+fi
+cat <<EOF
+"请输入文件名从几开始编号，直接按回车将从01开始编号."
+EOF
+read wshuzi
+if [ $wshuzi ]
+then :
+else 
+wshuzi=1
+fi
+for i in *
+do
+ case ${#wshuzi} in
+1)yshuzi="00"$wshuzi;;
+2)yshuzi="0"$wshuzi;;
+*)yshuzi=$wshuzi;;
+esac
+
+if [ -f $i ] 
+then 
+echo "正在把文件\"$i\"改名成\"${wname}_${yshuzi}\""
+mv "$i" "${wname}_${yshuzi}"
+((wshuzi++))
+fi
+done
+echo "全部完成了"
