@@ -1,0 +1,52 @@
+#!/bin/bash
+[ -z $1 ] && echo "No input file!" && exit 1
+screen_line=${2:-10}
+line_width=${3:-80}
+(( hlt_line = screen_line / 2 ))
+
+mk_lines() {
+    OIFS=$IFS
+    echo $OIFS
+    IFS="
+"
+    lines=($(cat $1 | fold -w $line_width))
+    IFS=$OIFS
+    line_cnt=${#lines[@]}
+}
+
+init() {
+    tty=$(stty -g)
+    echo -e "\033[?25l"
+}
+
+restore() {
+    echo -e "\033[?25h"
+    stty $tty
+    clear
+}
+
+show() {
+    local num index
+    clear
+    for ((num=0; num<screen_line; num++)); do
+        (( index = $1 - hlt_line + num))
+        if (( index < 0 )) || (( index >= line_cnt)); then
+            continue
+        fi
+        echo -ne "\033[$((num+3));10H"
+        if (( num == hlt_line )); then
+            echo -ne "\033[;32m${lines[$index]}\033[0m"
+        else
+            echo -ne "${lines[$index]}"
+        fi
+    done
+}
+
+##########################################################
+mk_lines $1
+init
+for ((i=0; i<line_cnt; i++)); do
+    show $i
+    sleep 1
+done
+restore
