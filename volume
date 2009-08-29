@@ -1,0 +1,78 @@
+#!/usr/bin/env bash
+    
+    CHANNEL=PCM
+    COLOR1=green
+    ACTION===
+    
+    if [ "$1" = "-h" ] || [ "$1" = "--help" ] ; then
+      p=$(basename $0)
+      echo "Usage: $p [-h] [频道] [+|-|m]
+
+  -h, --help  显示此帮助信息并退出
+  频道	所要设置的频道，如PCM、Master等，默认为PCM
+  +	设置音量数值增加5%
+  -	设置音量数值减少5%
+  m	在静音与放音间切换"
+
+      exit 0
+   fi
+    
+    if [ $# -eq 2 ] ; then
+      CHANNEL=$1
+     COLOR1="yellow"
+      shift
+    fi
+    
+
+    function vol_osd {
+      killall osd_cat &> /dev/null
+      VOL_STAT=$(get_vol_stat)
+      if (("$(get_vol_level)" < 25))
+        then  COLOR="red" 
+      else	
+	      COLOR=$COLOR1  
+      fi
+      osd_cat -d 2 -O 2 -u black  -l 2 -p bottom -o 60 -A center -c $COLOR \
+        -f "-adobe-helvetica-bold-r-normal-*-*-100-*-*-p-*-iso8859-1" \
+        -T "Volume $CHANNEL: $(get_vol_level)  $ACTION"\
+       	-b percentage -P $(get_vol_level) &
+    }
+
+    function get_vol_level {
+if [ "$CHANNEL" = "Master" ];then
+      amixer get $CHANNEL |\
+      grep 'Mono:'  |\
+      cut -d " " -f 6    |\
+      sed 's/[^0-9]//g'
+else
+      amixer get $CHANNEL |\
+      grep 'Front Left:'  |\
+      cut -d " " -f 7     |\
+      sed 's/[^0-9]//g'
+fi    
+}
+
+   
+
+    case "$1" in
+
+      "+")
+        amixer -q set $CHANNEL 5%+
+	ACTION="++"
+
+        ;;
+      "-")
+        amixer -q set $CHANNEL 5%-
+	ACTION="--"
+
+        ;;
+      "m")
+       
+        amixer -q set $CHANNEL 0	
+	   ACTION="=)("
+      
+        ;;
+
+esac
+       vol_osd
+
