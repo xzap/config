@@ -1,0 +1,21 @@
+#!/bin/bash
+find . -name "*.txt" -type f -fprint temp -exec cp {} . \;
+xx=`date +%Y%m%d`
+[ ! -d $xx ]&&mkdir -p $xx
+[ -f list ]&&rm list
+j=1
+count=`ls *.txt|wc -l`
+echo "找到了$count个txt文件，现在开始转换成pdb"
+for i in *.txt
+do 
+echo "$j/$count 正在将$i转换为${xx}_$j.pdb请稍等……"
+name=`echo ${i%.txt}|iconv -t gb2312`
+txt2pdbdoc "$name" "$i" "${xx}_$j.pdb"
+echo -e "$i\t${xx}_$j.pdb" >>list
+mv ${xx}_$j.pdb $xx
+	((j++))
+done
+for i in `cat temp`
+ do rm `basename $i`	
+done 
+rm temp
