@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "$1" | iconv -c -t gbk | od -t x1 -A n -w1000|tr " " "%"|tr [a-z] [A-Z]
+
