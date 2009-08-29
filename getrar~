@@ -1,0 +1,10 @@
+#!/bin/bash
+url=($(wget $1 -q -T 10 -O- 2>/dev/null |grep -o http://download.ourdev.cn/[a-z0-9_]*/[a-z0-9_]*/[a-z0-9_]*.[a-z]* >/tmp/tmp$$))
+
+for i in `cat /tmp/tmp$$`
+do
+wget "$i"
+
+done
+#rm /tmp/tmp$$
+
