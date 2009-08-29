@@ -1,0 +1,10 @@
+ln -sf bash /bin/sh
+/etc/init.d/NetworkManager stop >/dev/null 2>&1
+java -jar /usr/local/bin/wifispoonfeeder/spoonwep/spoonwep.jar
+/etc/init.d/NetworkManager start >/dev/null 2>&1
+airmon-ng |grep mon|awk '{print $1}' >tmp
+while read line
+do 
+	airmon-ng stop ${line} >/dev/null 2>&1
+done < tmp
+
