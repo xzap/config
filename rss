@@ -1,0 +1,46 @@
+#!/bin/bash
+if [ $1 ]
+then 
+while getopts g:z:xr option
+do
+    case $option in
+        g)
+       # displayNumber=$OPTARG
+	rss=1
+        ;;
+        z)
+        rss=2
+        ;;
+        x)
+        rss=3
+        ;;
+	r)
+	rss=`zenity --list --print-column 2 --hide-column 2 --column "rss" --column "url" "Google Reader" "1" "抓虾" "2" "鲜果" "3"`
+	;;
+	*)
+	rss=4
+      
+    esac
+done
+else
+echo "  1、 Google Reader"
+echo "  2、 抓虾"
+echo "  3、 鲜果"
+read i
+case $i in
+1)rss=1;;
+2)rss=2;;
+3)rss=3;;
+*)rss=4;;
+esac
+fi
+
+case $rss in 
+1)chromium-browser --enable-plugins --app=https://www.google.com/reader/;;
+2)chromium-browser --enable-plugins --app=http://www.zhuaxia.com;;
+3)chromium-browser --enable-plugins --app=http://xianguo.com/reader;;
+*)echo "外知选项 $i $rss";;
+esac
+
+
+
