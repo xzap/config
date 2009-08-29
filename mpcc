@@ -1,0 +1,20 @@
+#!/bin/bash 
+case $1 in
+n)
+	mpc next
+	notify-send `mpc|head -1`
+;;
+p)
+	mpc prev
+	notifu-send `mpc|head -1`
+;;
++)
+	mpc seek +5
+;;
+-)
+	mpc seek -5
+;;
+m)
+	notify-send `mpc|head -1`
+;;
+esac
