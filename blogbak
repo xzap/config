@@ -1,0 +1,114 @@
+#!/bin/bash
+
+################ 一些废话 #############################
+
+#下载百度空间中的日志的一个脚本，因为百度的日志不能备份，
+#所以就自己写个脚本来备份吧。没什么花巧的东西，用百度空间
+#的估计不多，用wordpress的多点，这个脚本主要就是为了我女儿
+#的博客备份所写的，不知道通用性怎么样。随便瞎写的，就算抛砖
+#引玉吧。
+
+#作者:xzap  xzap1982[at]gmail.com
+#2009年8月13日 夜
+#女儿的空间:http://hi.baidu.com/jixinyan2008
+
+###########这里是几个初始的设置#####################
+
+#百度空间的用户名
+user=jixinyan2008
+#备份博客页面的数量。不是日志数，而是百度空间中一个页面，一般来说一个页面10个日志。看设置了。
+blogindex=10
+#是否下载图片到本地，不下载会自动链接网站图片，下载后自动改为本地链接。yes or no
+downpic=yes
+#是否修改页面中的图片链接为本地链接。基本上和上面的一起用下载图片了就改成本地。
+locallink=yes
+#是否按时间顺序排列。还是逆序排列 yes是第一篇在页首。no是最后发布的文章在页首。
+pagesort=yes
+#备份后的文件名称
+filename=${user}_`date +%F_%R`
+
+#################下面是程序部分#######################
+#可以在脚本后面带用户名的方法来使用脚本。
+if [ $1 ]
+then
+user=$1
+fi
+
+#如果页面多的话超过10页，可以用下面的代码自动获取页面数。
+#indexurl=$blog/blog/index/0
+#Htm="`wget "$indexurl"  -q -T 10 -O- 2>/dev/null | iconv -f gbk`"
+#blogindex=`echo $Htm|sed 's/\">\[尾页\].*$//g'`
+#blogindex=${blogindex##*\/}
+
+#博客的地址。
+blog=http://hi.baidu.com/${user}/
+#删除以前的备份。
+[ -e templist.htm ]&&rm templist.htm
+[ -e temp ]&&rm temp
+[ -e ${filename}.htm ]&&rm ${filename}.htm
+echo "开始创建页面列表，并统计日志数……"
+for ((i=0;i<=$blogindex;i++)) 
+do
+wget "$blog/blog/index/$i"  -q -T 10 -O- 2>/dev/null | iconv -f gbk|grep 'class="tit"'|sed '1d' >>templist.htm
+done
+#日志的排列顺序。
+if [[ $pagesort = yes ]]
+echo "选择了改变顺序，正在改变顺序……"
+then
+tac templist.htm >temp
+cat temp >templist.htm
+fi
+count=`wc -l templist.htm |awk '{print $1}'`
+echo "一共$count个日志"
+k=1
+for j in `cat templist.htm |awk -F \" '{print $4 }'`
+do
+wget "http://hi.baidu.com/$j" -q -T 10 -O- >temp
+echo "$k/$count 正在处理$j"
+cat temp|sed -n '/id=\"m_blog\"/,/class=\"opt\"/p'|sed '$d' >>${filename}.htm
+echo "<hr>" >>${filename}.htm
+((k++))
+done 
+echo "bak in `date +%y-%m-%d_%H:%M`" >>${filename}.htm
+rm temp
+rm templist.htm
+echo "文章备份完成！一共备份了$count篇文章。备份时间`date`" 
+
+#是否下载图片到本地。
+if [[ $downpic = yes ]]
+	then
+mkdir -p pic
+echo "你选择了下载图片到本地。现在开始创建图片列表……"
+cat ${filename}.htm |egrep -o http://hiphotos.baidu.com/[a-zA-Z0-9]*/pic/item/[a-zA-Z0-9]*.'(jpg|jpeg|png)' >piclist
+piccount=`wc -l piclist|awk '{print $1}'`
+y=1
+mv piclist pic/
+cd pic
+for i in `cat piclist`
+	do
+	echo "$y/$piccount 开始下载图片$i"
+	((y++))
+	if [ -e ${i##*/} ] 
+	then
+		echo "图片已经存在。不用下载了，跳过。"
+		continue
+	fi
+	wget "$i" -q
+done
+rm piclist
+cd ..
+fi
+#是否更改图片链接为本地。
+if [[ $locallink = yes ]]
+then
+echo "选择了更改图片链接为本地，正在更改……"
+sed -i 's/http\:\/\/hiphotos\.baidu\.com\/[a-zA-Z0-9]*\/pic\/item/\.\/pic/g' ${filename}.htm
+fi
+echo "全部完成了。Bye!!"
+exit
+
+
+
+
+
+
