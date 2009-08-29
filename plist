@@ -1,0 +1,107 @@
+#!/bin/bash
+#=====================================
+#帮助pps for linux 更好的播放的小脚本。
+#根据视频列表接口生成
+#xzap   xzap1982[at]gmail.com
+#ver: 20090828
+#======================一些设置===================
+#pps for linux 的mplayer的地址
+exe=~/usr/pps/mplayer
+#缓存的播放列表位置
+templist=/tmp/ppslist$$
+#二级列表缓存位置
+sublist=/tmp/sublist$$
+#主分类列表缓存位置
+categorylist=/tmp/categorylist$$
+#======================开始代码========================
+#抓取分类页
+wget http://playlist.pps.tv/classfortv.php -q -T 10 -O- 2>/dev/null | enconv|sed -ne 's/<Title><!\[CDATA\[\(.*\)\]\]><\/Title>/\1/p' -e 's/<ID><!\[CDATA\[\(.*\)\]\]><\/ID>/\1/p' -e 's/<Type><!\[CDATA\[\(.*\)\]\]><\/Type>/\1/p' -e 's/<ContentNum><!\[CDATA\[\(.*\)\]\]><\/ContentNum>/\1/p' > $categorylist	
+while :
+do
+#产生分类页列表
+rusult=($(cat $categorylist|zenity --list  --width 300 --height 500 --separator "  " --hide-column "1" --print-column all --title "pps的简单的播放列表" --text "选择要播放影片的类别，0代表有子目录，1代表无子目录"  --column "class" --column "类别列表" --column "子目录" --column "数量"))
+if [ $? != 0 ]
+		then 
+		[ -e $templist ]&&rm $templist
+		[ -e $sublist ]&&rm $sublist
+		[ -e $categorylist ]&&rm $categorylist
+		exit
+		
+	fi
+class=${rusult[0]} 
+fenlei=${rusult[1]} 
+ftype=${rusult[2]} 
+num=${rusult[3]} 
+
+let count=$num/50
+let count=$count+1
+#判断是否有二级目录
+if [ $ftype = 1 ]; then
+[ -e $templist ]&&rm $templist
+echo "没有子目录，正在生成播放列表，该列表中共有$num个项目。项目越多，时间越长，请内心等待……"
+for (( i = 1; i <= count; i++ )); do
+echo -n "."
+wget  "http://playlist.pps.tv/channelsfortv.php?class=$class&page=$i" -q -T 10 -O- 2>/dev/null |enconv|sed '/<CI><!\[CDATA\[1\]\]><\/CI>/d'|sed -ne 's/<Title><!\[CDATA\[\(.*\)\]\]><\/Title>/\1/p' -e 's/<CI><!\[CDATA\[\(.*\)\]\]><\/CI>/\1/p' -e 's/<DUrl><!\[CDATA\[\(.*\)\]\]><\/DUrl>/\1/p' >>$templist
+done
+
+else
+[ -e $sublist ]&&rm $sublist
+echo "有子目录，正在生成子目录类别，该子目录中共有$num个项目。项目越多，时间越长，请内心等待……"
+
+wget  "http://playlist.pps.tv/subclassfortv.php?class=$class" -q -T 10 -O- 2>/dev/null |enconv|sed 's/<SubID>/\n<SubID>/g'|sed 's/<Title>/\n<Title>/g'|sed 's/<FilmTitle>/\n<FilmTitle>/g'|sed 's/<ContentNum>/\n<ContentNum>/g'|sed 's/<\/SubClass>/\n<\/SubClass>/g'|sed -ne 's/<SubID><!\[CDATA\[\(.*\)\]\]><\/SubID>/\1/p' -e 's/<Title><!\[CDATA\[\(.*\)\]\]><\/Title>/\1/p' -e 's/<ContentNum><!\[CDATA\[\(.*\)\]\]><\/ContentNum>/\1/p' -e 's/<FilmTitle><!\[CDATA\[\(.*\)\]\]><\/FilmTitle>/\1/p'  >$sublist
+
+subrusult=($(cat $sublist|zenity --list  --width 500 --height 500 --separator "  " --hide-column "1" --print-column all --title "pps的简单的播放列表" --text "请在二级子目录中选择，本目录共有$num个项目"  --column "subid" --column "$fenlei" --column "推荐影片" --column "数量"))
+
+if [ $? != 0 ]
+		then 
+		[ -e $templist ]&&rm $templist
+		[ -e $sublist ]&&rm $sublist
+		[ -e $categorylist ]&&rm $categorylist		
+		break		
+	fi
+echo $subrusult
+subid=${subrusult[0]} 
+subtitle=${subrusult[1]} 
+subfilm=${subrusult[2]} 
+num=${subrusult[3]} 
+
+let count=$num/50
+let count=$count+1
+[ -e $templist ]&&rm $templist
+
+for (( i = 1; i <=count; i++ )); do
+echo -n "."
+wget  "http://playlist.pps.tv/channelsfortv.php?class=$class&subclass=$subid&page=$i" -q -T 10 -O- 2>/dev/null |enconv|sed -ne 's/<Title><!\[CDATA\[\(.*\)\]\]><\/Title>/\1/p' -e 's/<DUrl><!\[CDATA\[\(.*\)\]\]><\/DUrl>/\1/p' >>$templist
+done
+echo "正在生成播放列表，该列表中共有$num个项目。项目越多，时间越长，请内心等待……"
+fi
+
+#生成播放列表
+while :
+do
+url=`cat $templist|zenity --list --column "影片名称" --column "影片的地址" --width 600 --height 600 --title "pps的简单的播放列表" --print-column 2 --text "选择要播放的影片，一共有$num个可播放项目" `
+
+if [ $? != 0 ]
+		then 
+
+		
+		[ -e $sublist ]&&rm $sublist
+			
+		
+			break
+		
+	fi
+
+if [ -z $url ]
+then 
+echo "Sorry! 没有捕获播放地址。"
+else
+
+echo "已经捕获播放地址$url现在开始播放……"
+echo $url
+#sudo $exe $url
+wait
+fi
+done
+done
+
