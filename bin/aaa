@@ -1,0 +1,9 @@
+#!/bin/bash
+path=`date +%F_%R`
+mkdir -p $path
+mv aria2.down $path
+cd $path
+aria2c -i aria2.down
+wait
+rm aria2.down
+sudo poweroff

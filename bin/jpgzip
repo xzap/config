@@ -1,0 +1,22 @@
+#!/bin/env python
+import os
+import os.path
+import glob
+import zipfile
+now_dir = os.path.realpath(os.getcwd())
+jpg_ext=[".jpg",".png",".gif",".jpeg",".bmp"]
+for d,fd,fl in os.walk(now_dir) :
+	for ff in fl :  
+    		f=os.path.realpath(os.path.join(d,ff))
+    		root,file_ext=os.path.splitext(f)
+    		if file_ext.lower() in jpg_ext :
+    			nf=root+".zip"
+    			os.rename(f,nf)
+    			z = zipfile.ZipFile(nf,"r")
+    			try:
+    				z.extractall()
+    			except :
+    				z.extractall(pwd="xianrenba")
+    			
+    			
+            

@@ -1,0 +1,8 @@
+#!/bin/env bash
+MOUNTPOINT='/media/iso'
+if [ $1 ]
+	then
+	sudo mount -t iso9660 -o loop $1 $MOUNTPOINT
+else
+	echo "缺少文件"
+fi

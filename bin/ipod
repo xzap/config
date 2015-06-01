@@ -1,0 +1,13 @@
+#!/bin/bash
+
+mkdir -p ~/ipod
+
+# Then as root type
+sudo usbmuxd
+
+# Now to mount the ipod type
+ifuse ~/ipod
+
+# Now you can access the filesytem at ~/ipod. To unmount the ipod type 
+
+# "fusermount ~/ipod"

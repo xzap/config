@@ -1,0 +1,4 @@
+#!/bin/bash
+url=$1
+curl "$url"|grep -o file_url=\".*\"|sed "s/file_url=\"//g"|sed "s/\"//g" 
+

@@ -1,0 +1,7 @@
+#/bin/bash
+ip link set enp2s0 down
+ip link set enp2s0 addres 12:34:56:78:9a:bc
+ip link set enp2s0 up
+#ip addr add 10.95.12.5/22 dev enp2s0
+ip addr add 10.95.14.3/22 dev enp2s0
+ip route add default via 10.95.12.1

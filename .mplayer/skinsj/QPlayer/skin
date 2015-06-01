@@ -1,0 +1,75 @@
+section = movieplayer
+
+ window = main
+
+  base = main, -1, -2
+
+  button = exit,      515,  13, 24, 24, evExit
+  button = icon,      489,  13, 24, 24, evIconify
+  button = play,      257,  38, 40, 40, evPlaySwitchToPause
+  button = pause,     257,  38, 40, 40, evPauseSwitchToPlay
+  button = stop,      439,  18, 40, 40, evStop
+  button = prev,      167,  18, 40, 40, evBackward10sec
+  button = next,      348,  18, 40, 40, evForward10sec
+  button = open,       77,  18, 40, 40, evLoadPlay
+;  button = pref,     227, 122, 6,   7, evPreferences
+  button = equel,     473, 138, 24, 24, evEqualizer
+  button = playl,     511, 138, 24, 24, evPlaylist
+  button = fullscr,    40, 138, 24, 24, evFullScreen
+  button = mute,       40,  96, 41, 14, evMute
+  button = about,      15,  13, 24, 24, evAbout
+
+  hpotmeter = slider,  36,  18, NULL, 100,   0, 100, 151, 355, 36, evSetMoviePosition
+  hpotmeter = knob,    18,  18, NULL, 100,  50, 445, 113, 100, 36, evSetBalance
+  hpotmeter = knob,    18,  18, NULL, 100,   0,  09, 112, 100, 36, evSetVolume
+
+  font = symbols, symbols
+  font = font, font
+
+  dlabel = 165, 107, 222, 0,    font, "$t - $F"
+  dlabel = 201, 128,   8, 0, symbols, "$l"
+  dlabel = 200, 128,   7, 0, symbols, "$s"
+  dlabel = 201, 128,   7, 0, symbols, "$e"
+  dlabel = 186, 117,  23, 1, symbols, "$a"
+  dlabel = 166, 127,  29, 1, symbols, "$T"
+  dlabel = 251, 126,  18, 1, symbols, "$t"
+  dlabel = 311, 126,  18, 1, symbols, "$3"
+  dlabel = 339, 126,  18, 1, symbols, "$4"
+  dlabel = 365, 126,  18, 1, symbols, "$5"
+
+;  potmeter = volume, 21, 50, 76, 69, 18, 18, evSetBalance
+
+  dlabel = 267,116, 60, 2, font, "VOL: $v"
+  dlabel = 327,116, 60, 2, font, "BAL: $b"
+
+ end
+
+ window = sub
+
+  base = sub,-1,-1
+  background = 0,0,0
+
+ end
+
+ window = menu
+
+  base = menu
+  selected = menus
+
+  menu = 3,   6, 122, 14, evAbout
+  menu = 3,  28, 122, 14, evLoad
+  menu = 3,  43, 122, 14, evNone         ; Add playlist
+  menu = 3,  60, 122, 14, evPlay
+  menu = 3,  84, 122, 14, evPlaylist
+  menu = 3, 100, 122, 14, evEqualizer
+  menu = 3, 116, 122, 14, evSkinBrowser
+  menu = 3, 140, 122, 14, evPreferences
+  menu = 3, 180, 122, 14, evNormalSize
+  menu = 3, 196, 122, 14, evDoubleSize
+  menu = 3, 212, 122, 14, evFullScreen
+  menu = 3, 228, 122, 14, evIconify
+  menu = 3, 244, 122, 14, evExit
+
+ end
+
+end

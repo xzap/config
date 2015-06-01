@@ -1,0 +1,36 @@
+#!/bin/bash
+
+list=("【6v电影www.dy131.com】" 
+"\[迅雷下载www.2tu.cc\]"
+"\[迅雷下载www.xubo.cc\]"
+"\[雷下载www.xubo.cc\]"
+"【6v电影www.dy131.com】"
+"%5B"
+"%5D"
+"\[www.dy131.com转载\]"
+"【更多电视剧请去www.dy131.com】"
+"飘花电影piaohua.com"
+"【更多电影请去www.6vdy.net】" 
+"【更多电视剧请去www.6vdy.net】"
+"【6v电影www.6vdy.com】"
+"\[www.66e.cc\]"
+"【更多电影请去www.66ys.org】"
+"【更多电影请去www.kan66.com】"
+"【6V电影www.6vdy.com】"
+'【6v电影域名被盗,新地址www.6vhao.net】'
+'【6v电影域名被盗,新地址www.6vhao.com】'
+"\[迅雷下载Xunbo.Cc\]")
+
+
+for a in * 
+	do
+	for i in ${list[*]}
+		do 
+		b=`echo $a|sed -e "s/${i}//g"`
+		if [ "$a" != "$b" ] 
+			then
+			echo "${a} 将改成 ${b}"
+			mv "$a" "$b"
+		fi
+	done
+done

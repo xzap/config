@@ -1,0 +1,57 @@
+section = movieplayer
+
+ window = main
+
+  decoration = enable
+  base       = main, -1, -1
+
+  font       = font, font
+  dlabel     =  12, 14, 376, 0, font, "$o "
+  dlabel     =  12, 39, 200, 0, font, "$8 / $6"
+
+  button     = prev,      5,  78, 30,  18, evPrev
+  button     = back,     44,  78, 30,  18, evBackward1min
+  button     = stop,     83,  78, 30,  18, evStop
+  button     = pause,   122,  78, 30,  18, evPauseSwitchToPlay
+  button     = play,    122,  78, 30,  18, evPlaySwitchToPause
+  button     = forward, 161,  78, 30,  18, evForward1min
+  button     = next,    200,  78, 30,  18, evNext
+  button     = full,    239,  78, 30,  18, evFullScreen
+  button     = eq,      278,  78, 30,  18, evEqualizer
+  button     = pl,      317,  78, 30,  18, evPlaylist
+  button     = pref, 	356,  78, 30,  18, evPreferences
+  hpotmeter  = vol,   19, 6, NULL, 100,  0, 278, 68, 117, 6, evSetVolume
+  hpotmeter  = pos,   19, 6, NULL, 100,  0,   5, 68, 247, 6, evSetMoviePosition
+ end
+
+ window = playbar
+
+  base       = playbar, -1, -1
+
+   font       = font, font
+  dlabel     =  12, 14, 376, 0, font, "$o "
+  dlabel     =  12, 39, 200, 0, font, "$8 / $6"
+
+  button     = prev,      5,  78, 30,  18, evPrev
+  button     = back,     44,  78, 30,  18, evBackward1min
+  button     = stop,     83,  78, 30,  18, evStop
+  button     = pause,   122,  78, 30,  18, evPauseSwitchToPlay
+  button     = play,    122,  78, 30,  18, evPlaySwitchToPause
+  button     = forward, 161,  78, 30,  18, evForward1min
+  button     = next,    200,  78, 30,  18, evNext
+  button     = full,    239,  78, 30,  18, evFullScreen
+  button     = eq,      278,  78, 30,  18, evEqualizer
+  button     = pl,      317,  78, 30,  18, evPlaylist
+  button     = pref, 	356,  78, 30,  18, evPreferences
+  hpotmeter  = vol,   19, 6, NULL, 100,  0, 278, 68, 117, 6, evSetVolume
+  hpotmeter  = pos,   19, 6, NULL, 100,  0,   5, 68, 247, 6, evSetMoviePosition
+ end
+
+ window      = sub
+
+  base       = sub,  -1,  -1
+  background = 193, 193, 193
+
+ end
+
+end

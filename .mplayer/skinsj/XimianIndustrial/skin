@@ -1,0 +1,190 @@
+section = movieplayer
+
+window = main
+
+;base=bitmap,x,y
+; x:            | y:
+;  -  0: left   |  -  0: top
+;  - -1: center |  - -1: center
+;  - -2: right  |  - -2: bottom
+base = main, -1, -2
+;button=bitmap,x,y,sx,sy,msg
+; 1. bitmap: pressed  | x,y: position in window
+; 2. bitmap: released | msg: name of system message
+; 3. bitmap: disabled | sx,sy: size of button
+button = exit,    583,  8, 16, 16, evExit
+button = iconify, 565,  8, 16, 16, evIconify
+
+button = prev,     20, 105, 24, 27, evPrev
+button = back, 49, 105, 27, 27,     evBackward10sec
+button = forward, 295, 105, 27, 27,  evForward10sec
+button = next,     324, 105, 24, 27, evNext
+
+button = play,     110, 105,27, 27, evPlaySwitchToPause
+button = subload, 139, 105, 27, 27, evLoadSubtitle
+button = load,    168, 105, 27, 27, evLoad
+button = pause,    197, 105, 27, 27, evPauseSwitchToPlay
+button = stop,     226, 105, 27, 27, evStop
+
+button = eqb,     444, 105, 27, 27, evEqualeaser
+button = plb,     474, 105, 27, 27, evPlaylist
+button = pref,     504,  105,  27, 27, evPreferences
+button = mute,     534,  105,  27, 27, evMute
+button = fsb,     564, 105, 27, 27, evFullScreen
+
+button = about,    13,  8, 16, 16, evAbout
+
+; hpotmeter=buttonbitmaps,sx,sy,phasebitmaps,phases,default value,x,y,sx,sy,msg
+hpotmeter = pos, 25,  15, NULL, 100,   0,  20,  83, 332, 15, evSetMoviePosition
+hpotmeter = pos, 25, 15, NULL, 100, 50, 444, 48,  148, 15, evSetBalance
+hpotmeter = volume,     25,   15, NULL, 100,   50, 444, 83,  148,    15, evSetVolume
+
+potmeter =progress, 101, 0, 20, 55, 0, 20, evSetMoviePosition
+; potmeter=phasebitmaps,phases,default value,x,y,sx,sy,msg
+;potmeter =volumes, 70, 40, 454, 52, 0, 0, evSetVolume
+
+; vpotmeter=buttonbitmaps,sx,sy,phasebitmaps,phases,default value,x,y,sx,sy,msg
+; font=fontname,fontid
+font = symbols, symbols
+font = font,    font
+
+; dynamic label
+; dlabel=x,y,sx,align,fontid,string ...
+;  align: 0: right 1: center 2: left
+;  str: $1 5 = hh:mm:ss
+;       $2  = mmmm:ss
+;       $3  = hh
+;       $4  = mm
+;       $5  = ss
+;       $6  = movie length, hh:mm:ss
+;       $7  = movie length, mmmm:ss
+;       $v  = volume, xxx.xx%1
+;       $V  = volume, xxx.x
+;       $b  = balance, xxx.xx%
+;       $B  = balance, xxx.x
+;       $$  = draw $
+;       $a  = audio type ( nosound: char n, mono: char m, stereo: char t, etc )
+;       $t  = track number
+;       $o  = filename
+;       $f  = filename with lower case
+;       $F  = filename with upper case
+;
+;       $T  = stream type ( file: f, video cd: v, dvd: d, url: u ), if
+;              font contain needed symbol.
+;       $l  = draw play symbol, if mplayer is playing movie and font
+;              contain playing symbol. ( char l )
+;       $s  = draw stop symbol, if mplayer not playing movie and font
+;              contain stop symbol. ( char s )
+;       $e  = draw pause symbol, if playing is paused and font contain
+;              pause symbol ( char e )
+dlabel = 28, 37, 330, 0,    font, "$t - $o [ $6 ]"
+dlabel = 367, 52,  108, 0, symbols, "$1"
+dlabel =  394, 70,  29, 0, symbols, "$l"
+dlabel =  394, 70,  29, 0, symbols, "$s"
+dlabel =  394, 70,  29, 0, symbols, "$e"
+dlabel = 447, 72,  102, 0,    font, "volume $v"
+dlabel = 447, 37,  102, 0,    font, "balance $b"
+dlabel = 546, 68,  29, 0, symbols, "$a"
+dlabel = 373, 35,  50, 1, symbols, "$T"
+
+; static label
+; slabel=x,y,fontid,string ...
+; slabel =  20, 20, symbols, "12345 - 67890"
+; slabel = 120, 10,    font, "Eyes on Me"
+
+end
+
+window = sub
+
+;base=bitmap,x,y,sx,sy
+; x:            | y:
+;  -  0: left   |  -  0: top
+;  - -1: center |  - -1: center
+;  - -2: right  |  - -2: bottom
+base = sub,-1,-1,
+; background=r,g,b
+; window background color, default is black
+; only subwindow, and decimal numbers
+;background = 13,13,13
+
+end
+
+window = playbar
+  
+base = playbar, -1, -1
+
+
+button = prev,     20, 105, 24, 27, evPrev
+button = back, 49, 105, 27, 27,     evBackward10sec
+button = forward, 295, 105, 27, 27,  evForward10sec
+button = next,     324, 105, 24, 27, evNext
+
+button = play,     110, 105,27, 27, evPlaySwitchToPause
+button = subload, 139, 105, 27, 27, evLoadSubtitle
+button = load,    168, 105, 27, 27, evLoad
+button = pause,    197, 105, 27, 27, evPauseSwitchToPlay
+button = stop,     226, 105, 27, 27, evStop
+
+button = eqb,     444, 105, 27, 27, evEqualeaser
+button = plb,     474, 105, 27, 27, evPlaylist
+button = pref,     504,  105,  27, 27, evPreferences
+button = mute,     534,  105,  27, 27, evMute
+button = fsb,     564, 105, 27, 27, evFullScreen
+
+; hpotmeter=buttonbitmaps,sx,sy,phasebitmaps,phases,default value,x,y,sx,sy,msg
+hpotmeter = pos, 25,  15, NULL, 100,   0,  20,  83, 332, 15, evSetMoviePosition
+
+hpotmeter = pos, 25, 15, NULL, 100, 50, 444, 48,  148, 15, evSetBalance
+hpotmeter = volume,     25,   15, NULL, 100,   50, 444, 83,  148,    15, evSetVolume
+; potmeter=phasebitmaps,phases,default value,x,y,sx,sy,msg
+potmeter =progress, 101, 0, 20, 58, 0, 20, evSetMoviePosition
+;potmeter =volumes, 70, 40, 454, 52, 0, 0, evSetVolume
+
+; vpotmeter=buttonbitmaps,sx,sy,phasebitmaps,phases,default value,x,y,sx,sy,msg
+; font=fontname,fontid
+font = symbols, symbols
+font = font,    font
+
+; dynamic label
+; dlabel=x,y,sx,align,fontid,string ...
+;  align: 0: right 1: center 2: left
+;  str: $1 5 = hh:mm:ss
+;       $2  = mmmm:ss
+;       $3  = hh
+;       $4  = mm
+;       $5  = ss
+;       $6  = movie length, hh:mm:ss
+;       $7  = movie length, mmmm:ss
+;       $v  = volume, xxx.xx%1
+;       $V  = volume, xxx.x
+;       $b  = balance, xxx.xx%
+;       $B  = balance, xxx.x
+;       $$  = draw $
+;       $a  = audio type ( nosound: char n, mono: char m, stereo: char t, etc )
+;       $t  = track number
+;       $o  = filename
+;       $f  = filename with lower case
+;       $F  = filename with upper case
+;
+;       $T  = stream type ( file: f, video cd: v, dvd: d, url: u ), if
+;              font contain needed symbol.
+;       $l  = draw play symbol, if mplayer is playing movie and font
+;              contain playing symbol. ( char l )
+;       $s  = draw stop symbol, if mplayer not playing movie and font
+;              contain stop symbol. ( char s )
+;       $e  = draw pause symbol, if playing is paused and font contain
+;              pause symbol ( char e )
+dlabel = 28, 37, 330, 0,    font, "$t - $o [ $6 ]"
+dlabel = 367, 52,  108, 0, symbols, "$1"
+dlabel =  394, 70,  29, 0, symbols, "$l"
+dlabel =  394, 70,  29, 0, symbols, "$s"
+dlabel =  394, 70,  29, 0, symbols, "$e"
+dlabel = 447, 72,  102, 0,    font, "volume $v"
+dlabel = 447, 37,  102, 0,    font, "balance $b"
+dlabel = 546, 68,  29, 0, symbols, "$a"
+dlabel = 373, 35,  50, 1, symbols, "$T"
+ 
+end
+
+end
+

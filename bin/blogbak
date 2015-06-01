@@ -1,0 +1,5 @@
+#/bin/bash
+cd ~/bak
+date=`date +%F_%R`
+wget http://172.16.16.2:8888/bak
+mv bak bak_${date}

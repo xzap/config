@@ -1,0 +1,27 @@
+#!/bin/bash
+cd /data
+path=`date +%F_%H_%M_%S`
+mkdir -p $path
+if [ -f '下载.html' ] 
+	then
+	mv 下载.html aria2.down
+fi
+if [ -f 'aria2.down' ] 
+	then
+	mv aria2.down $path
+	cd $path
+	aria2c -i aria2.down
+	wait
+#	rm aria2.down
+elif [ -f 'aria2c.down' ] 
+    then
+    mv aria2c.down $path
+    cd $path
+    aria2c -i aria2c.down
+    wait
+else 
+	rm -R $path
+#statements
+fi
+
+

@@ -1,0 +1,848 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BeautifulSoup	temp.py	/^from bs4 import BeautifulSoup$/;"	i
+__addHeaders	xHttp.py	/^    def __addHeaders(self):$/;"	m	class:xHttp	file:
+__decode	xHttp.py	/^    def __decode(self, webPage, charset):$/;"	m	class:xHttp	file:
+__error	xHttp.py	/^    def __error(self, e):$/;"	m	class:xHttp	file:
+__init__	xHttp.py	/^    def __init__(self, timeout=10, addHeaders=True):$/;"	m	class:xHttp
+__perLen	bing.py	/^__perLen = 0$/;"	v
+_getsubs	sub.py	/^def _getsubs(mvfile) :$/;"	f
+_getsubs	sub2.py	/^def _getsubs(mvfile) :$/;"	f
+_run	sub.py	/^def _run(movfile) :$/;"	f
+_run	sub2.py	/^def _run(movfile) :$/;"	f
+a	gif.py	/^a = {}$/;"	v
+aa	gif.py	/^    aa = divs[i*52:j*52]$/;"	v
+aa	renum.py	/^aa = ['一','二','三','四','五','六','七','八','九','十']$/;"	v
+aa	xueji.py	/^aa = {'26':'A','27':'P','28':'E'}$/;"	v
+aa	zgjqxs.py	/^        aa = re.findall("\\"pid\\":[0-9]*",cc)$/;"	v
+aaaa	gif.py	/^aaaa=""$/;"	v
+aas	gif.py	/^    aas = ''$/;"	v
+access_token	baiduyun.py	/^access_token='23.3991d55cdbe6045a8667a4c9f89c8c41.2592000.1416453504.2416182679-1575200'$/;"	v
+addAuth	xHttp.py	/^    def addAuth(self, url, user, pwd):$/;"	m	class:xHttp
+addCookiejar	xHttp.py	/^    def addCookiejar(self):$/;"	m	class:xHttp
+addProxy	xHttp.py	/^    def addProxy(self, host, type='http'):$/;"	m	class:xHttp
+addr	tianqi.py	/^addr = "101210302" #嘉善$/;"	v
+addr	tq.py	/^addr = "101210302" #嘉善$/;"	v
+album	1001ye.py	/^	album = data["album_title"]$/;"	v
+all	tea.py	/^all = ($/;"	v
+all	teacher.py	/^all = ($/;"	v
+arguments	txt2epub.py	/^    arguments = docopt(usage_info, sys.argv[1:])$/;"	v
+atime	retime.py	/^			atime = time.strftime('%Y-%m-%d',time.localtime(os.path.getatime(oldfile)))$/;"	v
+atime	tea.py	/^				atime = datetime.time(int(ti[0]),int(ti[1]))$/;"	v
+atime	teacher.py	/^				atime = datetime.time(int(ti[0]),int(ti[1]))$/;"	v
+author	xzap_txt2epub.py	/^    author = '梦入神机'$/;"	v
+basedir	163qs.py	/^basedir = os.path.expanduser("~\/qingsong\/")$/;"	v
+basedir	qingsong.py	/^basedir = os.path.expanduser("~\/qingsong\/")$/;"	v
+baseurl	1001ye.py	/^baseurl = "http:\/\/fdfs.xmcdn.com\/"$/;"	v
+baseurl	bing.py	/^baseurl = "http:\/\/www.bing.com"$/;"	v
+baseurl	duanzi.py	/^baseurl = "http:\/\/fdfs.xmcdn.com\/"$/;"	v
+baseurl	xima.py	/^baseurl = "http:\/\/fdfs.xmcdn.com\/"$/;"	v
+baseurl	ximalaya.py	/^baseurl = "http:\/\/fdfs.xmcdn.com\/"$/;"	v
+baseurl	ximaria2c.py	/^baseurl = "http:\/\/fdfs.xmcdn.com\/"$/;"	v
+baseurl	yaoqingma.py	/^baseurl = '1024diss.info'$/;"	v
+bb	renum.py	/^bb = ['1','2','3','4','5','6','7','8','9','0']$/;"	v
+bb	xueji.py	/^bb = {'22':'A','23':'B','24':'C','25':'D'}$/;"	v
+bb	ysyk.py	/^	bb = re.findall('<tbody>.*<\/tbody>',cc,re.S)$/;"	v
+bb	zgjqxs.py	/^        bb = [x.split(":")[1] for x in aa]$/;"	v
+bb2	ysyk.py	/^	bb2 = bb[0].replace('<tbody>','').replace('<\/tbody>','')$/;"	v
+body	ysyk.py	/^	body = body+bb2$/;"	v
+body	ysyk.py	/^body = re.sub('<th>.*<\/th>','',body)$/;"	v
+body	ysyk.py	/^body = re.sub('<tr>\\s*<\/tr>','',body)$/;"	v
+bookfile	txt2epub.py	/^    bookfile = open('{bname}.txt'.format(bname = bookname),'r')$/;"	v
+bookid	xzap_txt2epub.py	/^bookid = randid(8) +'-'+randid(4)+'-'+randid(4)+'-'+randid(4)+'-'+randid(12)$/;"	v
+bookid	zgjqxs.py	/^bookid = 505430$/;"	v
+bookname	txt2epub.py	/^    bookname = arguments['<name>']$/;"	v
+bookname	xzap_txt2epub.py	/^bookname = os.path.splitext(txtname)[0].replace(" ","_")$/;"	v
+bt	bt.py	/^import libtorrent as bt$/;"	i
+btime	tea.py	/^				btime = datetime.time(datetime.datetime.now().hour,datetime.datetime.now().minute)$/;"	v
+btime	teacher.py	/^				btime = datetime.time(datetime.datetime.now().hour,datetime.datetime.now().minute)$/;"	v
+c	tea.py	/^c=c\/\/7%2$/;"	v
+c	tea.py	/^c=int(c.days)$/;"	v
+c	tea.py	/^c=n-z$/;"	v
+c	teacher.py	/^c=c\/\/7%2$/;"	v
+c	teacher.py	/^c=int(c.days)$/;"	v
+c	teacher.py	/^c=n-z$/;"	v
+c	webcx.py	/^c = re.findall(p,cc)$/;"	v
+canshu	hihi.py	/^canshu = sys.argv[1]$/;"	v
+cc	1001ye.py	/^cc = urllib.request.urlopen(url).read().decode("utf-8")$/;"	v
+cc	115aria2.py	/^cc= gdecode(urllib.request.urlopen(url).read())$/;"	v
+cc	115lb.py	/^	cc = http.get(url,charset='GBK')$/;"	v
+cc	115lb.py	/^cc = http.get(url,charset='GBK')$/;"	v
+cc	bixia.py	/^cc =urllib.request.urlopen(url).read().decode()$/;"	v
+cc	duanzi.py	/^cc = urllib.request.urlopen(url3).read().decode("utf-8")$/;"	v
+cc	gl.py	/^cc = urllib.request.urlopen(req).read().decode('GBK')$/;"	v
+cc	hihi.py	/^        cc = opener.open(iurl).read().decode('gbk')$/;"	v
+cc	hosts.py	/^    cc = urllib.request.urlopen(url).read().decode('UTF-8')$/;"	v
+cc	hosts.py	/^cc = urllib.request.urlopen(url).read().decode('UTF-8')$/;"	v
+cc	renum.py	/^	cc = c$/;"	v
+cc	temp.py	/^	cc = x.read()$/;"	v
+cc	tianqi.py	/^cc = c.decode("utf8")$/;"	v
+cc	tq.py	/^cc = c.decode("utf8")$/;"	v
+cc	tttt.py	/^	cc = urllib.request.urlopen(req).read().decode()$/;"	v
+cc	webcx.py	/^	cc = x.read()$/;"	v
+cc	xinxi.py	/^cc = urllib.request.urlopen(url).read().decode('gbk')$/;"	v
+cc	xueji.py	/^		cc = urllib.request.urlopen(req).read().decode('utf-8')$/;"	v
+cc	xueji.py	/^	cc = urllib.request.urlopen(req).read().decode('utf-8')$/;"	v
+cc	xueji.py	/^cc = urllib.request.urlopen(req).read().decode('utf-8')$/;"	v
+cc	xzap_txt2epub.py	/^cc = urllib.request.urlopen(url).read().decode('utf-8')$/;"	v
+cc	ysyk.py	/^	cc = urllib.request.urlopen(req).read().decode('UTF-8')$/;"	v
+cc	zgjqxs.py	/^        cc = urllib.request.urlopen(url).read().decode("utf-8")$/;"	v
+cc	zj.py	/^	cc = urllib.request.urlopen(i[2]).read().decode()$/;"	v
+cc	zj.py	/^cc = urllib.request.urlopen(req).read().decode("utf-8")$/;"	v
+cc	zjer.py	/^	cc = urllib.request.urlopen(req).read().decode("utf-8")$/;"	v
+cc	zjer.py	/^cc = urllib.request.urlopen(req).read().decode("utf-8")$/;"	v
+cc2	xinxi.py	/^    cc2 = urllib.request.urlopen(url2).read().decode('gbk')$/;"	v
+cc2	zjer.py	/^	cc2 = urllib.request.urlopen(url2)$/;"	v
+cc3	zjer.py	/^	cc3 = urllib.request.urlopen(url3)$/;"	v
+cc4	zjer.py	/^	cc4 = urllib.request.urlopen(url4)$/;"	v
+cc4	zjer.py	/^cc4 = urllib.request.urlopen(url4).read().decode("utf-8")$/;"	v
+ccc	tea.py	/^					ccc =1$/;"	v
+ccc	tea.py	/^		ccc = 0$/;"	v
+ccc	teacher.py	/^					ccc =1$/;"	v
+ccc	teacher.py	/^		ccc = 0$/;"	v
+ccmy	zjer.py	/^ccmy = urllib.request.urlopen(urlmy)$/;"	v
+chaptercontent	txt2epub.py	/^                    chaptercontent = ''$/;"	v
+chaptercontent	txt2epub.py	/^    chaptercontent = ''$/;"	v
+chaptername	txt2epub.py	/^                    chaptername = line$/;"	v
+chaptername	txt2epub.py	/^    chaptername = ''$/;"	v
+chapters	txt2epub.py	/^    chapters = []$/;"	v
+chapters	xzap_txt2epub.py	/^chapters = []$/;"	v
+chaxun	1001ye.py	/^chaxun=re.findall('sound_id="([0-9]*)"',cc)$/;"	v
+chaxun	duanzi.py	/^chaxun = re.findall("sound_id=\\"[0-9]*\\"",cc)$/;"	v
+choice	qingsong.py	/^        choice = int(input("请输入序号："))$/;"	v
+choices	bing.py	/^choices = ('cn', 'jp', 'us') #这里就是设置国家了，不同国家有不同有一样。$/;"	v
+cj	115aria2.py	/^cj = cookiejar.CookieJar()$/;"	v
+cj	allteachers.py	/^cj = cookiejar.CookieJar()$/;"	v
+cj	gl.py	/^cj = cookiejar.CookieJar()$/;"	v
+cj	hihi.py	/^cj = cookiejar.CookieJar()$/;"	v
+cj	xinxi.py	/^cj = cookiejar.CookieJar()$/;"	v
+cj	zj.py	/^cj = cookiejar.CookieJar()$/;"	v
+cj	zjer.py	/^cj = cookiejar.CookieJar()$/;"	v
+codecs	txt2epub.py	/^import codecs$/;"	i
+comp	hihi.py	/^        comp = re.findall(p,cc)$/;"	v
+comp	jstq.py	/^comp = comp.replace('<\/p>','<\/p>\\n')$/;"	v
+comp	jstq.py	/^comp = comp.replace('\\r\\n','')$/;"	v
+comp	jstq.py	/^comp = comp.strip()$/;"	v
+comp	jstq.py	/^comp = re.search('<marquee.*\/marquee>',content,re.S).group()$/;"	v
+comp	xzap_txt2epub.py	/^    comp = re.compile('^[正文]*\\s*[第终][0123456789一二三四五六七八九十百千万零 　\\s]*[章].+')$/;"	v
+comp	zjer.py	/^comp = re.compile('view.jspx\\?id=([0-9]*)',re.IGNORECASE)$/;"	v
+comp2	jstq.py	/^comp2 = re.findall('<p>(.*)<\/p>',comp)$/;"	v
+comp3	jstq.py	/^comp3 = [ i.replace(' ','') for i in comp2 ]$/;"	v
+comp4	jstq.py	/^comp4 = "\\n".join(comp3[:-1])$/;"	v
+compp	jstq.py	/^compp = re.search('嘉善县气象台(.*)的天气预报',content).group(1)$/;"	v
+confile	xzap_txt2epub.py	/^confile = os.path.join(textdir,'content.html')$/;"	v
+container	txt2epub.py	/^    container = make_container(arguments)$/;"	v
+containerfile	xzap_txt2epub.py	/^containerfile = os.path.join(metainfdir,'container.xml')$/;"	v
+containerpath	txt2epub.py	/^    containerpath = os.path.join(metafolder, "container.xml")$/;"	v
+content	jstq.py	/^content = getcc(url)$/;"	v
+content	xzap_txt2epub.py	/^            content = []$/;"	v
+content	xzap_txt2epub.py	/^content = []$/;"	v
+contentfile	xzap_txt2epub.py	/^contentfile = os.path.join(oebpsdir,'content.opf')$/;"	v
+cookiejar	115aria2.py	/^from http import cookiejar$/;"	i
+cookiejar	allteachers.py	/^from http import cookiejar$/;"	i
+cookiejar	gl.py	/^from http import cookiejar$/;"	i
+cookiejar	hihi.py	/^from http import cookiejar$/;"	i
+cookiejar	jgpzj.py	/^from http import cookiejar$/;"	i
+cookiejar	qqy.py	/^from http import cookiejar$/;"	i
+cookiejar	shuajiafen.py	/^from http import cookiejar$/;"	i
+cookiejar	xHttp.py	/^import http.cookiejar$/;"	i
+cookiejar	xinxi.py	/^from http import cookiejar$/;"	i
+cookiejar	zj.py	/^from http import cookiejar$/;"	i
+cookiejar	zjer.py	/^from http import cookiejar$/;"	i
+coverfile	xzap_txt2epub.py	/^coverfile = os.path.join(imagesdir,'cover.jpg')$/;"	v
+coverpage	xzap_txt2epub.py	/^coverpage = os.path.join(textdir,'coverpage.html')$/;"	v
+coverword	xzap_txt2epub.py	/^    coverword =''$/;"	v
+cssdir	xzap_txt2epub.py	/^cssdir = os.path.join(oebpsdir,"css")$/;"	v
+cssfile	xzap_txt2epub.py	/^cssfile = os.path.join(cssdir,'main.css')$/;"	v
+currenttime	xzap_txt2epub.py	/^currenttime = time.strftime('%Y-%m-%dT%H:%M:%SZ',time.localtime())$/;"	v
+data	1001ye.py	/^	data = json.loads(jc)$/;"	v
+data	163qs.py	/^data = json.loads(resp)$/;"	v
+data	qingsong.py	/^data = json.loads(resp)$/;"	v
+data2	163qs.py	/^data2 = []$/;"	v
+data2	qingsong.py	/^data2 = []$/;"	v
+datetime	tea.py	/^import datetime$/;"	i
+datetime	teacher.py	/^import datetime$/;"	i
+datetime	tianqi.py	/^import datetime$/;"	i
+datetime	tq.py	/^import datetime$/;"	i
+dath	1001ye.py	/^	dath = os.path.join('\/home\/xzap\/ximala',album)$/;"	v
+delRepeat	duanzi.py	/^def delRepeat(liebiao):$/;"	f
+divs	gif.py	/^divs = []$/;"	v
+divs2	gif.py	/^divs2 = []$/;"	v
+docid	163qs.py	/^    docid = page['docid']$/;"	v
+docid	qingsong.py	/^docid = data2[choice]['docid']$/;"	v
+docopt	txt2epub.py	/^from docopt import docopt$/;"	i
+doreg	yaoqingma.py	/^def doreg(code):$/;"	f
+down	duanzi.py	/^def down(soundid,year="") :$/;"	f
+down	jgpzj.py	/^def down(s_id):$/;"	f
+down	qqy.py	/^def down(s_id):$/;"	f
+down	shuajiafen.py	/^def down(s_id):$/;"	f
+down	xima.py	/^def down(soundid,year="") :$/;"	f
+down	ximalaya.py	/^def down(soundid,year="") :$/;"	f
+down	ximaria2c.py	/^def down(soundid,year="") :$/;"	f
+downdir	bing.py	/^downdir = os.path.expanduser("~\/图片\/bingwallpaper") $/;"	v
+downfile	115aria2.py	/^downfile = os.path.realpath('\/data\/115pan\/115.down')$/;"	v
+downfile	bing.py	/^	downfile = os.path.join(downdir,localfile)$/;"	v
+download	xHttp.py	/^    def download(self, url, savefile):$/;"	m	class:xHttp
+downlrc	lrc.py	/^def downlrc(song) :$/;"	f
+dt	tianqi.py	/^dt = datetime.date.today()$/;"	v
+duanzi_down	duanzi.py	/^duanzi_down = os.path.realpath('\/tmp\/duanzi.down') $/;"	v
+epubdir	xzap_txt2epub.py	/^epubdir = os.path.join(bookpath,"epub_"+bookname)$/;"	v
+epubfolder	txt2epub.py	/^    epubfolder = arguments['<outputfolder>']$/;"	v
+error	baiduyun.py	/^import urllib.request, urllib.parse, urllib.error$/;"	i
+error	xHttp.py	/^import urllib.request, urllib.parse, urllib.error$/;"	i
+etree	txt2epub.py	/^from lxml import etree$/;"	i
+exe	hihi.py	/^exe=r'google-chrome-stable'+ " \/tmp\/hi-pda.html"$/;"	v
+ext	1001ye.py	/^	ext = os.path.splitext(mp3url)[1]$/;"	v
+ext	bing.py	/^ext = "_1920x1080.jpg"  #这里可以设置成1024x768或者1366 × 768等。$/;"	v
+f	163qs.py	/^    f = open (out,'w',encoding='utf-8') $/;"	v
+f	lrc.py	/^				f=os.path.realpath(os.path.join(d,ff))$/;"	v
+f	qingsong.py	/^f = open (out,'w',encoding='utf-8') $/;"	v
+f	sub.py	/^				f=os.path.realpath(os.path.join(d,ff))$/;"	v
+f	sub.py	/^		f = os.path.realpath(sys.argv[1])$/;"	v
+f	sub2.py	/^				f=os.path.realpath(os.path.join(d,ff))$/;"	v
+f	sub2.py	/^		f = os.path.realpath(sys.argv[1])$/;"	v
+f	tea.py	/^f=os.path.realpath("\/home\/xzap\/todo")$/;"	v
+fail	zj.py	/^fail = 0$/;"	v
+fc	1001ye.py	/^	fc = year+fc1 + fc2 + "_" + title$/;"	v
+fc1	1001ye.py	/^		fc1 = "0" + fc1$/;"	v
+fc2	1001ye.py	/^		fc2 = "0" + fc2$/;"	v
+ff	webcx.py	/^ff = os.path.realpath('\/home\/xzap\/lil.html')$/;"	v
+ff	xinxi.py	/^        ff = i[1]+".doc"$/;"	v
+fff	gif.py	/^        fff = os.path.join(root,ff)$/;"	v
+file_ext	lrc.py	/^				file_ext=os.path.splitext(f)[1][1:]$/;"	v
+file_ext	sub.py	/^				file_ext=os.path.splitext(f)[1][1:]$/;"	v
+file_ext	sub2.py	/^				file_ext=os.path.splitext(f)[1][1:]$/;"	v
+filename	1001ye.py	/^	filename = fc + ext $/;"	v
+fname	txt2epub.py	/^               fname = os.path.join(root, name)$/;"	v
+fname	xzap_txt2epub.py	/^            fname = os.path.join(root, name)$/;"	v
+formatted_created	1001ye.py	/^	formatted_created = data["formatted_created_at"].split()[0].replace("日","")$/;"	v
+frontpage	txt2epub.py	/^                        frontpage = 1$/;"	v
+frontpage	txt2epub.py	/^    frontpage = 0$/;"	v
+gdecode	115aria2.py	/^def gdecode(webPage, charset='UTF-8'):$/;"	f
+get	xHttp.py	/^    def get(self, url, params={}, headers={}, charset='UTF-8'):$/;"	m	class:xHttp
+get_access	baiduyun.py	/^def get_access() :$/;"	f
+get_last	jgpzj.py	/^def get_last():$/;"	f
+get_last	qqy.py	/^def get_last():$/;"	f
+get_last	shuajiafen.py	/^def get_last():$/;"	f
+get_quota	baiduyun.py	/^def get_quota(token) :$/;"	f
+getcc	jstq.py	/^def getcc(url,code='UTF-8'):$/;"	f
+getyouke	yaoqingma.py	/^def getyouke():$/;"	f
+gifpath	gif.py	/^gifpath = os.path.realpath('\/data\/123\/gif')$/;"	v
+glob	163qs.py	/^import glob$/;"	i
+glob	qingsong.py	/^import glob$/;"	i
+gzip	115aria2.py	/^import gzip$/;"	i
+gzip	xHttp.py	/^import gzip$/;"	i
+gzip	xubo.py	/^import gzip$/;"	i
+gzip	yaoqingma.py	/^import gzip$/;"	i
+h	tianqi.py	/^h = httplib2.Http()$/;"	v
+h	tq.py	/^h = httplib2.Http()$/;"	v
+hashlib	sub.py	/^import hashlib$/;"	i
+hashlib	sub2.py	/^import hashlib$/;"	i
+header	xinxi.py	/^header = {$/;"	v
+headers	115aria2.py	/^headers = {$/;"	v
+headers	tttt.py	/^headers = {$/;"	v
+headers	xueji.py	/^headers ={$/;"	v
+headers	yaoqingma.py	/^headers ={$/;"	v
+headers	ysyk.py	/^headers = {$/;"	v
+hosts	hosts.py	/^hosts = "\/etc\/hosts"$/;"	v
+hostsbak	hosts.py	/^hostsbak = "\/etc\/hosts_bak"$/;"	v
+href	gif.py	/^href ="<div>\\n"$/;"	v
+html	163qs.py	/^        html=re.sub(key['ref'],img,html)$/;"	v
+html	163qs.py	/^    html = news_data[docid]['body']$/;"	v
+html	163qs.py	/^    html=re.sub('<!--.*-->','',html)    $/;"	v
+html	163qs.py	/^    html=re.sub('<\/div>','<\/div>\\n',html)$/;"	v
+html	163qs.py	/^    html=re.sub('<\/p>','<\/p>\\n',html)$/;"	v
+html	qingsong.py	/^        html=re.sub(key['ref'],img,html)$/;"	v
+html	qingsong.py	/^html = news_data[docid]['body']$/;"	v
+html	qingsong.py	/^html=re.sub('<!--.*-->','',html)$/;"	v
+html	qingsong.py	/^html=re.sub('<\/div>','<\/div>\\n',html)$/;"	v
+html	qingsong.py	/^html=re.sub('<\/p>','<\/p>\\n',html)$/;"	v
+htmlfile	xzap_txt2epub.py	/^    htmlfile = os.path.join(textdir,'chapter'+str(pagenum)+'.html')$/;"	v
+htmlpath	gif.py	/^htmlpath = os.path.realpath('\/data\/123')$/;"	v
+http	115lb.py	/^http = xHttp.xHttp()$/;"	v
+http	xHttp.py	/^import http.cookiejar$/;"	i
+httplib2	tianqi.py	/^import httplib2$/;"	i
+httplib2	tq.py	/^import httplib2$/;"	i
+id1	zgjqxs.py	/^id1 = 4$/;"	v
+id2	duanzi.py	/^id2 = delRepeat(idlist) $/;"	v
+id2	zgjqxs.py	/^id2 = 30$/;"	v
+idlist	duanzi.py	/^idlist = [x.split("\\"")[1] for x in chaxun]$/;"	v
+idx	bing.py	/^idx=19 #这里设置下载的天数，1就是今天。不过最多前面10几天的可以有。$/;"	v
+imagesdir	xzap_txt2epub.py	/^imagesdir = os.path.join(oebpsdir,"images")$/;"	v
+imgdict	163qs.py	/^    imgdict = {}$/;"	v
+imgdict	qingsong.py	/^imgdict = {}$/;"	v
+imgdir	163qs.py	/^    imgdir = os.path.join(outdir,"Images")$/;"	v
+imgdir	qingsong.py	/^imgdir = os.path.join(outdir,"Images")$/;"	v
+imgfile	163qs.py	/^        imgfile = os.path.join(imgdir,jpgname)$/;"	v
+imgfile	qingsong.py	/^        imgfile = os.path.join(imgdir,jpgname)$/;"	v
+index	163qs.py	/^index = os.path.join(basedir,'index.html')$/;"	v
+index	qingsong.py	/^index = os.path.join(basedir,'index.html')$/;"	v
+info	bt.py	/^info = bt.torrent_info(torrent)$/;"	v
+inputcode	txt2epub.py	/^inputcode = ''$/;"	v
+is_chapter_title	txt2epub.py	/^def is_chapter_title(line):$/;"	f
+itemrefs	xzap_txt2epub.py	/^itemrefs = ''$/;"	v
+items	xzap_txt2epub.py	/^items = ''$/;"	v
+iurl	hihi.py	/^        iurl = url+str(i)$/;"	v
+j	gif.py	/^    j = i +1$/;"	v
+j	tianqi.py	/^	j=str(i+1)$/;"	v
+jc	1001ye.py	/^	jc = urllib.request.urlopen(url2).read().decode("utf-8")$/;"	v
+jc	115aria2.py	/^jc = json.loads(cc)$/;"	v
+jc	tianqi.py	/^jc = json.loads(cc)$/;"	v
+jc	tq.py	/^jc = json.loads(cc)$/;"	v
+jc	xzap_txt2epub.py	/^jc= json.loads(cc)$/;"	v
+jcc	tianqi.py	/^jcc=jc["weatherinfo"]$/;"	v
+jcc	tq.py	/^jcc=jc["weatherinfo"]$/;"	v
+jdata	bing.py	/^		jdata = json.loads(url_json)$/;"	v
+jg	xueji.py	/^		jg = i[1].split(' - ')$/;"	v
+jianjiefile	xzap_txt2epub.py	/^jianjiefile = os.path.join(textdir,'summary.html')$/;"	v
+jpg	qingsong.py	/^jpg=""$/;"	v
+jpg	zgjqxs.py	/^                        jpg = "0" + str(num) + ".jpg"                        $/;"	v
+jpg	zgjqxs.py	/^                        jpg = "00" + str(num) + ".jpg"$/;"	v
+jpg	zgjqxs.py	/^                        jpg = "000" + str(num) + ".jpg"$/;"	v
+jpg	zgjqxs.py	/^                        jpg = str(num) + ".jpg"$/;"	v
+jpgfile	xzap_txt2epub.py	/^    jpgfile = 'http:\/\/wfqqreader.3g.qq.com\/cover\/886\/236886\/t7_236886.jpg'$/;"	v
+jpgfile	zgjqxs.py	/^                jpgfile = os.path.join(path,jpg)$/;"	v
+jpglist	bing.py	/^jpglist = {}$/;"	v
+jpgname	163qs.py	/^        jpgname = os.path.basename(key['src'].replace('\\"\/',""))$/;"	v
+jpgname	qingsong.py	/^        jpgname = os.path.basename(key['src'].replace('\\"\/',""))$/;"	v
+jpgtime	bing.py	/^		jpgtime = jdata["images"][0]["enddate"]$/;"	v
+jpgurl	bing.py	/^		jpgurl = baseurl+jdata["images"][0]["urlbase"]+ext$/;"	v
+json	1001ye.py	/^import json$/;"	i
+json	115aria2.py	/^import json$/;"	i
+json	163qs.py	/^import json,os,re$/;"	i
+json	baiduyun.py	/^import json$/;"	i
+json	bing.py	/^import json$/;"	i
+json	bixia.py	/^import json$/;"	i
+json	duanzi.py	/^import json$/;"	i
+json	lrc.py	/^import json$/;"	i
+json	qingsong.py	/^import json,os,re$/;"	i
+json	sub.py	/^import json$/;"	i
+json	sub2.py	/^import json$/;"	i
+json	test.py	/^import json$/;"	i
+json	tianqi.py	/^import json$/;"	i
+json	tq.py	/^import json$/;"	i
+json	xima.py	/^import json$/;"	i
+json	ximalaya.py	/^import json$/;"	i
+json	ximaria2c.py	/^import json$/;"	i
+json	xzap_txt2epub.py	/^import json$/;"	i
+json	zgjqxs.py	/^import json$/;"	i
+k	tea.py	/^			k=l-t$/;"	v
+k	teacher.py	/^			k=l-t$/;"	v
+l	tea.py	/^	l = i$/;"	v
+l	teacher.py	/^	l = i$/;"	v
+line	txt2epub.py	/^            line = zh2utf8(line)$/;"	v
+line	txt2epub.py	/^        line = line.strip()$/;"	v
+line	xzap_txt2epub.py	/^        line = zh2unicode (line).strip()$/;"	v
+link	bt.py	/^link="magnet:?"+urllib.parse.quote(link)$/;"	v
+list1	jgpzj.py	/^list1 = get_last()$/;"	v
+list1	qqy.py	/^list1 = get_last()$/;"	v
+list2	jgpzj.py	/^list2 = []$/;"	v
+list2	qqy.py	/^list2 = []$/;"	v
+listl	tttt.py	/^listl = [['ff8080814aeb872e014aec01a2c20184','2','1'],$/;"	v
+localfile	bing.py	/^	localfile = v + jpgext$/;"	v
+login	allteachers.py	/^def login(user,passwd):$/;"	f
+login	jgpzj.py	/^def login(user,passwd):$/;"	f
+login	qqy.py	/^def login(user,passwd):$/;"	f
+login	shuajiafen.py	/^def login(user,passwd):$/;"	f
+make_container	txt2epub.py	/^def make_container(docoptions):$/;"	f
+make_new_epub_folder	txt2epub.py	/^def make_new_epub_folder(options):$/;"	f
+makechapterhtml	txt2epub.py	/^def makechapterhtml(filepath, chapter, chapnum):$/;"	f
+mask	yaoqingma.py	/^def mask(mcode):$/;"	f
+metafolder	txt2epub.py	/^    metafolder = os.path.join(epubfolder, 'META-INF')$/;"	v
+metainfdir	xzap_txt2epub.py	/^metainfdir = os.path.join(epubdir,"META-INF")$/;"	v
+mimetypefile	xzap_txt2epub.py	/^mimetypefile = os.path.join(epubdir,'mimetype')$/;"	v
+mimetypes	txt2epub.py	/^import mimetypes$/;"	i
+mov_ext	sub.py	/^	mov_ext=["avi","rmvb","mkv","mp4","rm"]$/;"	v
+mov_ext	sub2.py	/^	mov_ext=["avi","rmvb","mkv","mp4","rm"]$/;"	v
+movie_dir	removiedir.py	/^movie_dir = os.path.realpath('\/data')$/;"	v
+movie_dir	retime.py	/^movie_dir = os.path.realpath('\/data\/movie')$/;"	v
+movie_dir	test.py	/^movie_dir = os.path.realpath('\/data\/12\/3')$/;"	v
+mp3_ext	lrc.py	/^mp3_ext = ("mp3",)$/;"	v
+mp3url	1001ye.py	/^	mp3url = baseurl + data["play_path"]$/;"	v
+mtime	retime.py	/^			mtime = time.strftime('%Y-%m-%d_%H_%M_%S',time.localtime(os.path.getmtime(oldfile)))$/;"	v
+mulus	xzap_txt2epub.py	/^mulus = ''$/;"	v
+n	qingsong.py	/^n = 0$/;"	v
+n	tea.py	/^n=datetime.date.today()$/;"	v
+n	teacher.py	/^n=datetime.date.today()$/;"	v
+name	bt.py	/^name = urllib.parse.quote(info.name())$/;"	v
+navPoints	xzap_txt2epub.py	/^navPoints = ''$/;"	v
+navpoint	txt2epub.py	/^    navpoint = ''$/;"	v
+new	renum.py	/^	new = i.replace(' ','').replace('回','回_')$/;"	v
+new_dir	test.py	/^new_dir = os.path.realpath('\/data\/12\/new')$/;"	v
+new_path	txt2epub.py	/^               new_path = os.path.normpath(fname.replace(epubfolder,''))$/;"	v
+new_path	xzap_txt2epub.py	/^            new_path = os.path.normpath(fname.replace(epubdir,''))$/;"	v
+newdir	removiedir.py	/^newdir = os.path.realpath('\/data\/movie')$/;"	v
+newdir	retime.py	/^newdir = os.path.realpath('\/data\/movie')$/;"	v
+newf	renum.py	/^	newf = os.path.join(pwd,new)$/;"	v
+newfile	removiedir.py	/^            newfile = os.path.join(newdir,oldfile)$/;"	v
+newfile	retime.py	/^				newfile = oldfile.replace(rr,'')$/;"	v
+newfile	retime.py	/^			newfile = os.path.join(root,atime+"_"+onefile)$/;"	v
+news_data	163qs.py	/^    news_data = json.loads(resp[12:-1])$/;"	v
+news_data	qingsong.py	/^news_data = json.loads(resp[12:-1])$/;"	v
+no	zj.py	/^no =[]$/;"	v
+now	yaoqingma.py	/^    now = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))$/;"	v
+now_title	xzap_txt2epub.py	/^        now_title = line$/;"	v
+now_title	xzap_txt2epub.py	/^now_title = ''$/;"	v
+num	1001ye.py	/^num = 0$/;"	v
+num	jgpzj.py	/^num =1 $/;"	v
+num	qqy.py	/^num =1 $/;"	v
+num	shuajiafen.py	/^num =1 $/;"	v
+num	xima.py	/^num = 0$/;"	v
+num	ximalaya.py	/^num = 0$/;"	v
+num	ximaria2c.py	/^num = 0$/;"	v
+num	xzap_txt2epub.py	/^        num =1 $/;"	v
+num	xzap_txt2epub.py	/^num = 0$/;"	v
+num	zgjqxs.py	/^num = 0$/;"	v
+num	zj.py	/^num = 0$/;"	v
+num2	gif.py	/^num2 = len(divs2) \/\/4+1$/;"	v
+num2	xzap_txt2epub.py	/^    num2 = pagenum + 2$/;"	v
+num3	gif.py	/^    num3 = len(aa) \/\/4 $/;"	v
+oebpsdir	xzap_txt2epub.py	/^oebpsdir = os.path.join(epubdir,"OEBPS")$/;"	v
+ok	1001ye.py	/^ok = 0$/;"	v
+ok	xima.py	/^ok = 0$/;"	v
+ok	ximalaya.py	/^ok = 0$/;"	v
+ok	ximaria2c.py	/^ok = 0$/;"	v
+ok	zj.py	/^ok = 0$/;"	v
+old	yaoqingma.py	/^        old = pickle.load(f)$/;"	v
+old	yaoqingma.py	/^    old = []  $/;"	v
+oldf	renum.py	/^	oldf = os.path.join(pwd,i)$/;"	v
+oldfile	retime.py	/^		oldfile = os.path.join(root,onefile)$/;"	v
+olli	txt2epub.py	/^    olli = ''$/;"	v
+olli	xzap_txt2epub.py	/^    olli = ''$/;"	v
+opener	1001ye.py	/^opener = urllib.request.build_opener()$/;"	v
+opener	115aria2.py	/^opener = urllib.request.build_opener()$/;"	v
+opener	allteachers.py	/^opener = urllib.request.build_opener()$/;"	v
+opener	duanzi.py	/^opener = urllib.request.build_opener()$/;"	v
+opener	gl.py	/^opener = urllib.request.build_opener()$/;"	v
+opener	hihi.py	/^opener = urllib.request.build_opener()$/;"	v
+opener	xima.py	/^opener = urllib.request.build_opener()$/;"	v
+opener	ximalaya.py	/^opener = urllib.request.build_opener()$/;"	v
+opener	ximaria2c.py	/^opener = urllib.request.build_opener()$/;"	v
+opener	xinxi.py	/^opener = urllib.request.build_opener()$/;"	v
+opener	zj.py	/^opener = urllib.request.build_opener()$/;"	v
+opener	zjer.py	/^opener = urllib.request.build_opener()$/;"	v
+os	1001ye.py	/^import os$/;"	i
+os	115aria2.py	/^import os,re$/;"	i
+os	115lb.py	/^import os$/;"	i
+os	163qs.py	/^import json,os,re$/;"	i
+os	allteachers.py	/^import os,re$/;"	i
+os	bing.py	/^import os$/;"	i
+os	bixia.py	/^import os$/;"	i
+os	duanzi.py	/^import os$/;"	i
+os	gif.py	/^import os$/;"	i
+os	gl.py	/^import os,re$/;"	i
+os	hihi.py	/^import os,re$/;"	i
+os	hosts.py	/^import os$/;"	i
+os	jgpzj.py	/^import os,re$/;"	i
+os	jstq.py	/^import os$/;"	i
+os	lrc.py	/^import os$/;"	i
+os	qingsong.py	/^import json,os,re$/;"	i
+os	qqy.py	/^import os,re$/;"	i
+os	removiedir.py	/^import os$/;"	i
+os	renum.py	/^import os$/;"	i
+os	retime.py	/^import os$/;"	i
+os	shuajiafen.py	/^import os,re$/;"	i
+os	sub.py	/^import os,sys$/;"	i
+os	sub2.py	/^import os,sys$/;"	i
+os	tea.py	/^import os$/;"	i
+os	teacher.py	/^import os$/;"	i
+os	temp.py	/^import os$/;"	i
+os	test.py	/^import os$/;"	i
+os	tttt.py	/^import os$/;"	i
+os	txt2epub.py	/^import os$/;"	i
+os	webcx.py	/^import os,re$/;"	i
+os	xima.py	/^import os$/;"	i
+os	ximalaya.py	/^import os$/;"	i
+os	ximaria2c.py	/^import os$/;"	i
+os	xinxi.py	/^import os$/;"	i
+os	xzap_txt2epub.py	/^import os$/;"	i
+os	yaoqingma.py	/^import os$/;"	i
+os	ysyk.py	/^import os$/;"	i
+os	zgjqxs.py	/^import os$/;"	i
+os	zj.py	/^import os,re$/;"	i
+os	zjer.py	/^import os,re$/;"	i
+ot	tea.py	/^ot = "\\n".join(todo2)$/;"	v
+out	163qs.py	/^    out = os.path.join(outdir,'index.html' )$/;"	v
+out	qingsong.py	/^out = os.path.join(outdir,'index.html' )$/;"	v
+out	txt2epub.py	/^    out = zipfile.ZipFile(os.path.join(epubfolder, '{bname}.epub'.format(bname = bookname)), "w", zipfile.ZIP_DEFLATED)$/;"	v
+outdir	163qs.py	/^    outdir = os.path.expanduser("~\/qingsong\/"+page['title'])$/;"	v
+outdir	qingsong.py	/^outdir = os.path.expanduser("~\/qingsong\/"+data2[choice]['title'])$/;"	v
+outputfolder	txt2epub.py	/^    outputfolder = arguments['<outputfolder>']$/;"	v
+p	hihi.py	/^p = re.compile('<span.*'+canshu+'.*span>',re.IGNORECASE)$/;"	v
+p	test.py	/^        p = os.path.join(root,onefile)$/;"	v
+p	webcx.py	/^p = re.compile('<tr class="tbody".*?<\/tr>',re.S)$/;"	v
+p2	test.py	/^        p2 = p.replace(movie_dir,new_dir)$/;"	v
+pagenum	gif.py	/^pagenum = len(divs) \/\/ 52 +1$/;"	v
+pagenum	xzap_txt2epub.py	/^    pagenum = chapternum +1$/;"	v
+params	gl.py	/^params = urllib.parse.urlencode(params)$/;"	v
+params	gl.py	/^params={"startDate":"2014-10",$/;"	v
+params	xzap_txt2epub.py	/^params = {'count':1,'q':bookname}$/;"	v
+params	zj.py	/^params = urllib.parse.urlencode(params)$/;"	v
+params	zj.py	/^params={"username":"jgp280017",$/;"	v
+params	zjer.py	/^params = urllib.parse.urlencode(params)$/;"	v
+params	zjer.py	/^params={"username":"jgp280017",$/;"	v
+parse	allteachers.py	/^import urllib.parse$/;"	i
+parse	baiduyun.py	/^import urllib.request, urllib.parse, urllib.error$/;"	i
+parse	bixia.py	/^import urllib.parse$/;"	i
+parse	bt.py	/^import urllib.parse$/;"	i
+parse	gif.py	/^import urllib.parse$/;"	i
+parse	gl.py	/^import urllib.parse$/;"	i
+parse	jgpzj.py	/^import urllib.parse$/;"	i
+parse	qqy.py	/^import urllib.parse$/;"	i
+parse	shuajiafen.py	/^import urllib.parse$/;"	i
+parse	xHttp.py	/^import urllib.request, urllib.parse, urllib.error$/;"	i
+parse	xzap_txt2epub.py	/^import urllib.parse$/;"	i
+parse	yaoqingma.py	/^import urllib.parse$/;"	i
+parse	zj.py	/^import urllib.parse$/;"	i
+parse	zjer.py	/^import urllib.parse$/;"	i
+part	1.py	/^part = '([0-9]{1,3}\\\\.[0-9]{1,3}\\\\.[0-9]{1,3}\\\\.[0-9]{1,3})<\/td>.*?<td>([0-9]{2,4})<\/td>.*?<td>.*?<\/td>.*?<td>.*?<\/td>.*?<td>(.*?)<\/td>'$/;"	v
+part	gif.py	/^part = re.compile('[a-zA-Z0-9]{2,6}[-_]?[0-9]{2,5}')$/;"	v
+passwd	allteachers.py	/^    passwd = i[1][-6:]$/;"	v
+password	jgpzj.py	/^password = "280017"$/;"	v
+password	qqy.py	/^password = "213020"$/;"	v
+password	shuajiafen.py	/^	password = str(input("请输入密码：")).replace(" ","").replace("　","")$/;"	v
+path	1001ye.py	/^path = os.path.expanduser("~\/ximalaya")$/;"	v
+path	115lb.py	/^path = os.path.expanduser("~\/115lb.html")$/;"	v
+path	duanzi.py	/^path = os.path.expanduser("~\/ximalaya")$/;"	v
+path	xima.py	/^path = os.path.realpath("\/data\/ximalaya")$/;"	v
+path	ximalaya.py	/^path = os.path.expanduser("~\/ximalaya")$/;"	v
+path	ximaria2c.py	/^path = os.path.expanduser("~\/ximalaya")$/;"	v
+path	zgjqxs.py	/^path = os.path.expanduser("~\/海贼王")$/;"	v
+pattern	xueji.py	/^		pattern = re.compile("editable=\\"0\\">([0-9]*)<optio")$/;"	v
+pattern	xueji.py	/^	pattern = re.compile("id='([0-9]*)' text='([^']*)'")$/;"	v
+pattern	xueji.py	/^pattern = re.compile("id='([0-9]*)' text='(.年级[^']*)'")$/;"	v
+pcurl	1.py	/^def pcurl(url,encode='gbk'):$/;"	f
+pcurl	xubo.py	/^def pcurl(url):$/;"	f
+pickle	yaoqingma.py	/^import pickle$/;"	i
+post	xHttp.py	/^    def post(self, url, params={}, headers={}, charset='UTF-8'):$/;"	m	class:xHttp
+pp	removiedir.py	/^        pp = os.path.join(root,onefile)$/;"	v
+pre_chap_title	txt2epub.py	/^                        pre_chap_title = '前  言'$/;"	v
+pre_chap_title	txt2epub.py	/^                    pre_chap_title = chaptername$/;"	v
+pre_chap_title	txt2epub.py	/^    pre_chap_title = ''$/;"	v
+pre_title	xzap_txt2epub.py	/^        pre_title = now_title$/;"	v
+pre_title	xzap_txt2epub.py	/^pre_title = ''$/;"	v
+pwd	renum.py	/^pwd='\/home\/xzap\/ximalaya\/听泡爸改编《西游记》'$/;"	v
+qli	163qs.py	/^qli = '\\n'.join(qlist)$/;"	v
+qli	qingsong.py	/^qli = '\\n'.join(qlist)$/;"	v
+qlist	163qs.py	/^qlist=[]$/;"	v
+qlist	qingsong.py	/^qlist=[]$/;"	v
+r_part	removiedir.py	/^r_part = re.compile('2015-[0-9]{2}-[0-9]{2}_[0-9]{2}_[0-9]{2}_[0-9]{2}') #2015-03-07_11_28_17$/;"	v
+r_part	retime.py	/^r_part = re.compile('2015-[0-9]{2}-[0-9]{2}_') #2015-03-07_11_28_17$/;"	v
+r_part	xinxi.py	/^r_part = re.compile('href="(ReadNews.asp\\?NewsID=[0-9]*)" target=_blank title="([^"]*)"')$/;"	v
+r_part2	xinxi.py	/^r_part2 = re.compile('down.asp\\?FileName=doc\/[0-9]*-[0-9]*\/[0-9]*.doc')$/;"	v
+randid	xzap_txt2epub.py	/^def randid(num):$/;"	f
+random	allteachers.py	/^import random$/;"	i
+random	bixia.py	/^import random$/;"	i
+random	jgpzj.py	/^import random$/;"	i
+random	qqy.py	/^import random$/;"	i
+random	shuajiafen.py	/^import random$/;"	i
+random	sub2.py	/^import random$/;"	i
+random	xzap_txt2epub.py	/^import random$/;"	i
+re	1.py	/^import re$/;"	i
+re	1001ye.py	/^import re$/;"	i
+re	115aria2.py	/^import os,re$/;"	i
+re	115lb.py	/^import re$/;"	i
+re	163qs.py	/^import json,os,re$/;"	i
+re	allteachers.py	/^import os,re$/;"	i
+re	bixia.py	/^import re$/;"	i
+re	duanzi.py	/^import re$/;"	i
+re	gif.py	/^import re$/;"	i
+re	gl.py	/^import os,re$/;"	i
+re	hihi.py	/^import os,re$/;"	i
+re	jgpzj.py	/^import os,re$/;"	i
+re	jstq.py	/^import re$/;"	i
+re	lrc.py	/^import re$/;"	i
+re	qingsong.py	/^import json,os,re$/;"	i
+re	qqy.py	/^import os,re$/;"	i
+re	removiedir.py	/^import re$/;"	i
+re	renum.py	/^import re$/;"	i
+re	retime.py	/^import re$/;"	i
+re	shuajiafen.py	/^import os,re$/;"	i
+re	temp.py	/^import re$/;"	i
+re	test.py	/^import re$/;"	i
+re	tttt.py	/^import re$/;"	i
+re	txt2epub.py	/^import re$/;"	i
+re	webcx.py	/^import os,re$/;"	i
+re	xima.py	/^import re$/;"	i
+re	ximalaya.py	/^import re$/;"	i
+re	ximaria2c.py	/^import re$/;"	i
+re	xinxi.py	/^import re$/;"	i
+re	xubo.py	/^import re$/;"	i
+re	xueji.py	/^import re$/;"	i
+re	xzap_txt2epub.py	/^import re$/;"	i
+re	yaoqingma.py	/^import re$/;"	i
+re	ysyk.py	/^import re$/;"	i
+re	zgjqxs.py	/^import re$/;"	i
+re	zj.py	/^import os,re$/;"	i
+re	zjer.py	/^import os,re$/;"	i
+readurl	ximalaya.py	/^		readurl = input ("Need a ximalaya's url: ")$/;"	v
+readurl	ximaria2c.py	/^		readurl = input ("Need a ximalaya's url: ")$/;"	v
+readurl2	xima.py	/^		readurl2 = i.replace("#\/","")$/;"	v
+readurl2	ximalaya.py	/^		readurl2 = readurl.replace("#\/","")$/;"	v
+readurl2	ximaria2c.py	/^		readurl2 = readurl.replace("#\/","")$/;"	v
+reporthook	bing.py	/^def reporthook(a, b, c):    # a:已经下载的数据大小; b:数据大小; c:远程文件大小;$/;"	f
+reporthook	xHttp.py	/^        def reporthook(a, b, c):    # a:已经下载的数据大小; b:数据大小; c:远程文件大小;$/;"	f	function:xHttp.download
+reporthook	xima.py	/^def reporthook(blocknum, blocksize, totalsize):$/;"	f
+reporthook	ximalaya.py	/^def reporthook(blocknum, blocksize, totalsize):$/;"	f
+reporthook	ximaria2c.py	/^def reporthook(blocknum, blocksize, totalsize):$/;"	f
+reporthook	zgjqxs.py	/^def reporthook(blocknum, blocksize, totalsize):$/;"	f
+req	gl.py	/^req = urllib.request.Request(url5,data=params.encode("utf-8"))$/;"	v
+req	tttt.py	/^	req = urllib.request.Request(url,headers=headers)$/;"	v
+req	xueji.py	/^		req = urllib.request.Request(url3,headers=headers)$/;"	v
+req	xueji.py	/^	req = urllib.request.Request(url2,headers=headers)$/;"	v
+req	xueji.py	/^req = urllib.request.Request(url1,headers=headers)$/;"	v
+req	ysyk.py	/^	req = urllib.request.Request(url,headers=headers)$/;"	v
+req	zj.py	/^req = urllib.request.Request(url,data=params.encode("utf-8"))$/;"	v
+req	zjer.py	/^req = urllib.request.Request(url,data=params.encode("utf-8"))$/;"	v
+request	1.py	/^import urllib.request$/;"	i
+request	1001ye.py	/^import urllib.request$/;"	i
+request	115aria2.py	/^import urllib.request$/;"	i
+request	163qs.py	/^import urllib.request$/;"	i
+request	allteachers.py	/^import urllib.request$/;"	i
+request	baiduyun.py	/^import urllib.request, urllib.parse, urllib.error$/;"	i
+request	bing.py	/^import urllib.request$/;"	i
+request	bixia.py	/^import urllib.request$/;"	i
+request	duanzi.py	/^import urllib.request$/;"	i
+request	gif.py	/^import urllib.request$/;"	i
+request	gl.py	/^import urllib.request$/;"	i
+request	hihi.py	/^import urllib.request$/;"	i
+request	hosts.py	/^import urllib.request$/;"	i
+request	jgpzj.py	/^import urllib.request$/;"	i
+request	jstq.py	/^import urllib.request$/;"	i
+request	lrc.py	/^import urllib.request$/;"	i
+request	qingsong.py	/^import urllib.request$/;"	i
+request	qqy.py	/^import urllib.request$/;"	i
+request	shuajiafen.py	/^import urllib.request$/;"	i
+request	sub.py	/^import urllib.request$/;"	i
+request	sub2.py	/^import urllib.request$/;"	i
+request	temp.py	/^import urllib.request$/;"	i
+request	test.py	/^import urllib.request$/;"	i
+request	tttt.py	/^import urllib.request$/;"	i
+request	xHttp.py	/^import urllib.request, urllib.parse, urllib.error$/;"	i
+request	xima.py	/^import urllib.request$/;"	i
+request	ximalaya.py	/^import urllib.request$/;"	i
+request	ximaria2c.py	/^import urllib.request$/;"	i
+request	xinxi.py	/^import urllib.request$/;"	i
+request	xubo.py	/^import urllib.request$/;"	i
+request	xueji.py	/^import urllib.request$/;"	i
+request	xzap_txt2epub.py	/^import urllib.request$/;"	i
+request	yaoqingma.py	/^import urllib.request$/;"	i
+request	ysyk.py	/^import urllib.request$/;"	i
+request	zgjqxs.py	/^import urllib.request$/;"	i
+request	zj.py	/^import urllib.request$/;"	i
+request	zjer.py	/^import urllib.request$/;"	i
+resp	163qs.py	/^    resp = urllib.request.urlopen(url).read().decode('utf-8')$/;"	v
+resp	163qs.py	/^resp = urllib.request.urlopen(url).read().decode('utf-8')$/;"	v
+resp	qingsong.py	/^resp = urllib.request.urlopen(url).read().decode('utf-8')$/;"	v
+rp	bixia.py	/^rp = re.compile('<a style="" href="([0-9]*.html)">([^<]*)<\/a>')$/;"	v
+rr	115lb.py	/^rr = re.findall ('<li>.*<\/li>',cc)$/;"	v
+rr	bixia.py	/^rr = rp.findall (cc)$/;"	v
+rr	gif.py	/^            rr = re.findall(part,truename)[0]$/;"	v
+rr	retime.py	/^				rr = re.search(r_part,oldfile).group()$/;"	v
+rr	xinxi.py	/^rr = re.findall(r_part,cc)$/;"	v
+rr	xueji.py	/^		rr =re.findall (pattern,cc)$/;"	v
+rr	xueji.py	/^	rr =re.findall (pattern,cc)$/;"	v
+rr	xueji.py	/^rr =re.findall (pattern,cc)$/;"	v
+rr	zjer.py	/^rr = re.findall(comp,cc4)$/;"	v
+rre	1.py	/^def rre(part,content):$/;"	f
+rre	xubo.py	/^def rre(part,content):$/;"	f
+rus	jstq.py	/^rus = compp + '\\n' + comp4$/;"	v
+rusult	zj.py	/^rusult = "一共有老师%s人,开通老师%s人,未开通老师%s人.名单如下：" % (num,ok,fail)$/;"	v
+shell	jstq.py	/^shell = 'echo \\''+ rus + '\\' |zenity --text-info'$/;"	v
+shutil	hosts.py	/^import shutil  $/;"	i
+shutil	txt2epub.py	/^import shutil$/;"	i
+sj	tianqi.py	/^sj=("今天","明天","后天")$/;"	v
+socket	xHttp.py	/^import socket$/;"	i
+songlist	lrc.py	/^songlist = []$/;"	v
+soundlist	xima.py	/^def soundlist(soundurl) :$/;"	f
+soundlist	ximalaya.py	/^def soundlist(soundurl) :$/;"	f
+soundlist	ximaria2c.py	/^def soundlist(soundurl) :$/;"	f
+soup	temp.py	/^soup = BeautifulSoup(cc,from_encoding="GBK")$/;"	v
+span	hihi.py	/^span = []$/;"	v
+span2	hihi.py	/^span2 = [ '<li>'+i+'<\/li>' for i in span ]$/;"	v
+span3	hihi.py	/^span3 = [ i.replace('href=\\"','href=\\"http:\/\/www.hi-pda.com\/forum\/') for i in span2]$/;"	v
+spine	txt2epub.py	/^    spine = ''$/;"	v
+summary	xzap_txt2epub.py	/^    summary = '当人类开始踏入星河时代，古老的修行就焕发出来了新的生命力。 修行，无论在任何时代永远不会过时。 金刚经中，须菩提问释迦牟尼，“要成佛，如何降服其心？”。 一句话，就道尽了修行的真谛，四个字，降服其心。 心神通广大，所以孙悟空又叫做心猿。每一个人的心灵就是一尊孙悟空，降服心猿，就可成斗战胜佛。 在星河大帝之中，梦入神机为你阐述修行的真谛。'$/;"	v
+sys	1001ye.py	/^import sys$/;"	i
+sys	115aria2.py	/^import sys$/;"	i
+sys	163qs.py	/^import sys$/;"	i
+sys	allteachers.py	/^import sys$/;"	i
+sys	bixia.py	/^import sys$/;"	i
+sys	bt.py	/^import sys$/;"	i
+sys	duanzi.py	/^import sys$/;"	i
+sys	gl.py	/^import sys$/;"	i
+sys	hihi.py	/^import sys$/;"	i
+sys	jgpzj.py	/^import sys$/;"	i
+sys	qqy.py	/^import sys$/;"	i
+sys	retime.py	/^import sys$/;"	i
+sys	shuajiafen.py	/^import sys$/;"	i
+sys	sub.py	/^import os,sys$/;"	i
+sys	sub2.py	/^import os,sys$/;"	i
+sys	test.py	/^import sys$/;"	i
+sys	txt2epub.py	/^import sys$/;"	i
+sys	xHttp.py	/^import sys$/;"	i
+sys	xima.py	/^import sys$/;"	i
+sys	ximalaya.py	/^import sys$/;"	i
+sys	ximaria2c.py	/^import sys$/;"	i
+sys	xinxi.py	/^import sys$/;"	i
+sys	xzap_txt2epub.py	/^import sys$/;"	i
+sys	zgjqxs.py	/^import sys$/;"	i
+sys	zj.py	/^import sys$/;"	i
+sys	zjer.py	/^import sys$/;"	i
+t	tea.py	/^t = datetime.datetime.now().weekday()$/;"	v
+t	teacher.py	/^t = datetime.datetime.now().weekday()$/;"	v
+teachers	allteachers.py	/^teachers=[$/;"	v
+teachers	zj.py	/^teachers = [$/;"	v
+textdir	xzap_txt2epub.py	/^textdir = os.path.join(oebpsdir,'text')$/;"	v
+ti	tea.py	/^				ti = j[0].split(":")$/;"	v
+ti	teacher.py	/^				ti = j[0].split(":")$/;"	v
+time	1001ye.py	/^import time$/;"	i
+time	bing.py	/^import time$/;"	i
+time	bixia.py	/^import time$/;"	i
+time	duanzi.py	/^import time$/;"	i
+time	jgpzj.py	/^import time$/;"	i
+time	qqy.py	/^import time$/;"	i
+time	retime.py	/^import time$/;"	i
+time	shuajiafen.py	/^import time$/;"	i
+time	test.py	/^import time$/;"	i
+time	tttt.py	/^import time$/;"	i
+time	txt2epub.py	/^import time$/;"	i
+time	xHttp.py	/^import time$/;"	i
+time	xima.py	/^import time$/;"	i
+time	ximalaya.py	/^import time$/;"	i
+time	ximaria2c.py	/^import time$/;"	i
+time	xzap_txt2epub.py	/^import time$/;"	i
+time	yaoqingma.py	/^import time$/;"	i
+time	ysyk.py	/^import time$/;"	i
+time	zgjqxs.py	/^import time$/;"	i
+time	zjer.py	/^import time$/;"	i
+time1	1001ye.py	/^time1 =time.time()$/;"	v
+time1	xima.py	/^time1 =time.time()$/;"	v
+time1	ximalaya.py	/^time1 =time.time()$/;"	v
+time1	ximaria2c.py	/^time1 =time.time()$/;"	v
+time1	zgjqxs.py	/^                time1 = time.time()$/;"	v
+title	1001ye.py	/^	title = data["title"]$/;"	v
+titles	xzap_txt2epub.py	/^titles = []$/;"	v
+tocfile	xzap_txt2epub.py	/^tocfile = os.path.join(oebpsdir,'toc.ncx')$/;"	v
+todo2	tea.py	/^todo2=[]$/;"	v
+torrent	bt.py	/^torrent="\/data\/2013110216111347.torrent"$/;"	v
+total	1001ye.py	/^total = 0$/;"	v
+total	xima.py	/^total = 0$/;"	v
+total	ximalaya.py	/^	total = len(sys.argv[1:])$/;"	v
+total	ximalaya.py	/^total = 0$/;"	v
+total	ximaria2c.py	/^	total = len(sys.argv[1:])$/;"	v
+total	ximaria2c.py	/^total = 0$/;"	v
+truename	gif.py	/^        truename = os.path.splitext(os.path.basename(fff))[0]$/;"	v
+tt	bt.py	/^tt=""$/;"	v
+tt	tttt.py	/^	tt = str(time.time()).replace('.','')[:13]$/;"	v
+tt	ysyk.py	/^	tt = str(time.time()).replace('.','')[:13]$/;"	v
+txtfile	xzap_txt2epub.py	/^txtfile = sys.argv[1]$/;"	v
+uin	zgjqxs.py	/^                uin = bookid + i + int(j) $/;"	v
+uniq	xinxi.py	/^def uniq(ll):$/;"	f
+url	1.py	/^url = 'http:\/\/www.xici.net.co\/nn\/'$/;"	v
+url	1001ye.py	/^url = 'http:\/\/www.ximalaya.com\/9216785\/album\/257813'$/;"	v
+url	115lb.py	/^	url = 'http:\/\/www.xunleicili.com\/115\/'+str(i)+'.html'$/;"	v
+url	115lb.py	/^url = 'http:\/\/www.xunleicili.com\/115\/index.html'$/;"	v
+url	163qs.py	/^    url = 'http:\/\/3g.163.com\/touch\/article\/'+docid+'\/full.html'$/;"	v
+url	163qs.py	/^url = 'http:\/\/c.m.163.com\/nc\/article\/list\/T1350383429665\/0-20.html'$/;"	v
+url	bixia.py	/^    url = 'http:\/\/www.bxwx.la\/b\/0\/77\/' + i[0]$/;"	v
+url	bixia.py	/^url  = 'http:\/\/www.bxwx.la\/b\/0\/77\/'$/;"	v
+url	duanzi.py	/^url = 'http:\/\/www.ximalaya.com\/2629294\/album\/214706' #段子来了$/;"	v
+url	hosts.py	/^    url = 'https:\/\/raw.githubusercontent.com\/racaljk\/hosts\/master\/hosts'$/;"	v
+url	hosts.py	/^url = 'https:\/\/raw.githubusercontent.com\/racaljk\/hosts\/master\/hosts'$/;"	v
+url	jstq.py	/^url = 'http:\/\/www.jsqx.com.cn\/'$/;"	v
+url	qingsong.py	/^url = 'http:\/\/3g.163.com\/touch\/article\/'+docid+'\/full.html'$/;"	v
+url	qingsong.py	/^url = 'http:\/\/c.m.163.com\/nc\/article\/list\/T1350383429665\/0-20.html'$/;"	v
+url	tianqi.py	/^url = "http:\/\/m.weather.com.cn\/data\/{}.html".format(addr)$/;"	v
+url	tq.py	/^url = "http:\/\/www.weather.com.cn\/data\/cityinfo\/{}.html".format(addr)$/;"	v
+url	xubo.py	/^url = input('输入网址：').strip()$/;"	v
+url	xzap_txt2epub.py	/^url = "https:\/\/api.douban.com\/v2\/book\/search?"+urllib.parse.urlencode(params)$/;"	v
+url	zgjqxs.py	/^        url = baseurl + str(i)$/;"	v
+url2	1001ye.py	/^	url2 = "http:\/\/www.ximalaya.com\/tracks\/" + i + ".json"$/;"	v
+url2	duanzi.py	/^url2 = 'http:\/\/www.ximalaya.com\/2629294\/album\/273674.ajax' #段子来了羞羞版$/;"	v
+url2	xinxi.py	/^    url2 = "http:\/\/www.xzjy.com.cn\/"+i[0]$/;"	v
+url3	xinxi.py	/^    url3 = re.findall(r_part2,cc2)$/;"	v
+url5	xinxi.py	/^        url5 =  'http:\/\/www.xzjy.com.cn\/'+url3[0]$/;"	v
+url_json	bing.py	/^		url_json = urllib.request.urlopen(json_url).read().decode("utf-8")$/;"	v
+urlencode	sub.py	/^from urllib.parse import urlencode$/;"	i
+urlencode	sub2.py	/^from urllib.parse import urlencode$/;"	i
+urllib	1.py	/^import urllib.request$/;"	i
+urllib	1001ye.py	/^import urllib.request$/;"	i
+urllib	115aria2.py	/^import urllib.request$/;"	i
+urllib	163qs.py	/^import urllib.request$/;"	i
+urllib	allteachers.py	/^import urllib.parse$/;"	i
+urllib	allteachers.py	/^import urllib.request$/;"	i
+urllib	baiduyun.py	/^import urllib.request, urllib.parse, urllib.error$/;"	i
+urllib	bing.py	/^import urllib.request$/;"	i
+urllib	bixia.py	/^import urllib.parse$/;"	i
+urllib	bixia.py	/^import urllib.request$/;"	i
+urllib	bt.py	/^import urllib.parse$/;"	i
+urllib	duanzi.py	/^import urllib.request$/;"	i
+urllib	gif.py	/^import urllib.parse$/;"	i
+urllib	gif.py	/^import urllib.request$/;"	i
+urllib	gl.py	/^import urllib.parse$/;"	i
+urllib	gl.py	/^import urllib.request$/;"	i
+urllib	hihi.py	/^import urllib.request$/;"	i
+urllib	hosts.py	/^import urllib.request$/;"	i
+urllib	jgpzj.py	/^import urllib.parse$/;"	i
+urllib	jgpzj.py	/^import urllib.request$/;"	i
+urllib	jstq.py	/^import urllib.request$/;"	i
+urllib	lrc.py	/^import urllib.request$/;"	i
+urllib	qingsong.py	/^import urllib.request$/;"	i
+urllib	qqy.py	/^import urllib.parse$/;"	i
+urllib	qqy.py	/^import urllib.request$/;"	i
+urllib	shuajiafen.py	/^import urllib.parse$/;"	i
+urllib	shuajiafen.py	/^import urllib.request$/;"	i
+urllib	sub.py	/^import urllib.request$/;"	i
+urllib	sub2.py	/^import urllib.request$/;"	i
+urllib	temp.py	/^import urllib.request$/;"	i
+urllib	test.py	/^import urllib.request$/;"	i
+urllib	tttt.py	/^import urllib.request$/;"	i
+urllib	xHttp.py	/^import urllib.request, urllib.parse, urllib.error$/;"	i
+urllib	xima.py	/^import urllib.request$/;"	i
+urllib	ximalaya.py	/^import urllib.request$/;"	i
+urllib	ximaria2c.py	/^import urllib.request$/;"	i
+urllib	xinxi.py	/^import urllib.request$/;"	i
+urllib	xubo.py	/^import urllib.request$/;"	i
+urllib	xueji.py	/^import urllib.request$/;"	i
+urllib	xzap_txt2epub.py	/^import urllib.parse$/;"	i
+urllib	xzap_txt2epub.py	/^import urllib.request$/;"	i
+urllib	yaoqingma.py	/^import urllib.parse$/;"	i
+urllib	yaoqingma.py	/^import urllib.request$/;"	i
+urllib	ysyk.py	/^import urllib.request$/;"	i
+urllib	zgjqxs.py	/^import urllib.request$/;"	i
+urllib	zj.py	/^import urllib.parse$/;"	i
+urllib	zj.py	/^import urllib.request$/;"	i
+urllib	zjer.py	/^import urllib.parse$/;"	i
+urllib	zjer.py	/^import urllib.request$/;"	i
+urllist	hosts.py	/^urllist = ['https:\/\/raw.githubusercontent.com\/racaljk\/hosts\/master\/hosts','https:\/\/hosts-smounives.rhcloud.com\/hosts','http:\/\/www.racalinux.cn\/hosts.txt']$/;"	v
+urllist	xima.py	/^urllist = [$/;"	v
+urls	115aria2.py	/^urls = []$/;"	v
+user	allteachers.py	/^    user = i[1]$/;"	v
+username	jgpzj.py	/^username = "jgp280017"$/;"	v
+username	qqy.py	/^username = "qqy213020"$/;"	v
+username	shuajiafen.py	/^	username = str(input("请输入用户名：")).replace(" ","").replace("　","")$/;"	v
+webfile	temp.py	/^webfile = os.path.realpath('\/home\/xzap\/yw.html')$/;"	v
+weekd	tea.py	/^weekd = ("星期一","星期二","星期三","星期四","星期五","星期六","星期日")$/;"	v
+weekd	teacher.py	/^weekd = ("星期一","星期二","星期三","星期四","星期五","星期六","星期日")$/;"	v
+writenavfile	txt2epub.py	/^def writenavfile(filepath, olli):$/;"	f
+writencxfile	txt2epub.py	/^def writencxfile(filepath, navpoint):$/;"	f
+writeopffile	txt2epub.py	/^def writeopffile(filepath, manifest, spine):$/;"	f
+xHttp	115lb.py	/^import xHttp $/;"	i
+xHttp	bing.py	/^import xHttp$/;"	i
+xHttp	xHttp.py	/^class xHttp:$/;"	c
+ximalaya_down	xima.py	/^ximalaya_down = os.path.realpath('\/tmp\/ximalaya.down') $/;"	v
+year	1001ye.py	/^		year = 2014$/;"	v
+year	1001ye.py	/^		year = 2015$/;"	v
+z	tea.py	/^z=datetime.date(2013,1,6)$/;"	v
+z	teacher.py	/^z=datetime.date(2013,1,6)$/;"	v
+zh2unicode	txt2epub.py	/^def zh2unicode(stri):$/;"	f
+zh2unicode	xzap_txt2epub.py	/^def zh2unicode(stri):$/;"	f
+zh2utf8	txt2epub.py	/^def zh2utf8(stri):$/;"	f
+zipfile	bixia.py	/^import zipfile$/;"	i
+zipfile	txt2epub.py	/^import zipfile$/;"	i
+zipfile	xzap_txt2epub.py	/^import zipfile$/;"	i

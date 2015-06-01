@@ -1,0 +1,6 @@
+#!/bin/bash
+
+curl $1 >/tmp/yy
+cat /tmp/yy|grep -oE ed2k://[[:graph:]]+\"|sed s/\"//g |uniq > ~/yydone
+rm /tmp/yy
+cat ~/yydone

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu>
+	<menu id="root-menu" label="OpenBox 3">
+		<item label="桌面">
+			<action name="ToggleShowDesktop"/>
+		</item>
+		<item label="chrome">
+			<action name="Execute">
+				<execute>google-chrome-stable </execute>
+			</action>
+		</item>
+		<item label="firefox">
+			<action name="Execute">
+				<execute>firefox</execute>
+			</action>
+		</item>
+		<item label="osdlyrics">
+			<action name="Execute">
+				<execute>osdlyrics</execute>
+			</action>
+		</item>
+		<item label="Tilda">
+			<action name="Execute">
+				<execute>tilda</execute>
+			</action>
+		</item>
+		<item label="urxvt">
+			<action name="Execute">
+				<execute>
+					urxvt
+				</execute>
+			</action>
+		</item>
+		<item label="pcmanfm">
+			<action name="Execute">
+				<execute>
+					pcmanfm
+				</execute>
+			</action>
+		</item>
+		<item label="mousepad">
+			<action name="Execute">
+				<execute>mousepad</execute>
+			</action>
+		</item>
+		<item label="stardict">
+			<action name="Execute">
+				<execute>
+					stardict
+				</execute>
+			</action>
+		</item>
+		<item label="sublime 3">
+			<action name="Execute">
+				<execute>subl3</execute>
+			</action>
+		</item>
+		<separator/>
+		<menu execute="xdg_menu --format openbox3-pipe" id="xdg-menu" label="xdg"/>
+		<separator/>
+		<menu id="40" label="OpenBox">
+			<item label="Reconfigure">
+				<action name="Reconfigure"/>
+			</item>
+			<item label="Restart">
+				<action name="Restart"/>
+			</item>
+			<item label="Exit">
+				<action name="Exit"/>
+			</item>
+			<menu id="40-5557" label="Editconf">
+				<menu id="40-5557-61310" label="Gui">
+					<item label="obconf">
+						<action name="Execute">
+							<execute>
+								obconf
+							</execute>
+						</action>
+					</item>
+					<item label="obmenu">
+						<action name="Execute">
+							<execute>
+								obmenu
+							</execute>
+						</action>
+					</item>
+					<item label="lxappearance">
+						<action name="Execute">
+							<execute>
+								lxappearance
+							</execute>
+						</action>
+					</item>
+				</menu>
+				<item label="Edit autostart.sh">
+					<action name="Execute">
+						<execute>
+							gvim /home/xzap/.config/openbox/autostart.sh
+						</execute>
+					</action>
+				</item>
+				<item label="Edit rc.xml">
+					<action name="Execute">
+						<execute>gvim /home/xzap/.config/openbox/rc.xml</execute>
+					</action>
+				</item>
+				<item label="Edit menu.xml">
+					<action name="Execute">
+						<execute>gvim /home/xzap/.config/openbox/menu.xml</execute>
+					</action>
+				</item>
+				<item label="Edit .conkyrc">
+					<action name="Execute">
+						<execute>gvim /home/xzap/.conkyrc</execute>
+					</action>
+				</item>
+				<item label="Edit tint2rc">
+					<action name="Execute">
+						<execute>gvim /home/xzap/.config/tint2/tint2rc</execute>
+					</action>
+				</item>
+				<item label="Edit .wbar">
+					<action name="Execute">
+						<execute>gvim /home/xzap/.wbar</execute>
+					</action>
+				</item>
+			</menu>
+			<separator/>
+			<menu id="client-list-menu"/>
+			<separator/>
+			<item label="休眠">
+				<action name="Execute">
+					<execute>systemctl suspend</execute>
+				</action>
+			</item>
+			<item label="重启">
+				<action name="Execute">
+					<execute>systemctl reboot</execute>
+				</action>
+			</item>
+			<item label="关机">
+				<action name="Execute">
+					<execute>systemctl poweroff</execute>
+				</action>
+			</item>
+		</menu>
+	</menu>
+</openbox_menu>

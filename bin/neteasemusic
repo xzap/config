@@ -1,0 +1,250 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-  
+
+'''
+一个从网易云音乐下载320k的mp3的小脚本
+
+'''
+import urllib.request
+import json
+import os
+import base64
+import hashlib
+import random
+import time
+import sys
+import socket
+import http.cookiejar
+
+
+socket.setdefaulttimeout(3)
+def encrypted_id(id):
+    byte1 = bytearray('3go8&$8*3*3h0k(2)2',"utf8")
+    byte2 = bytearray(str(id),"utf8")
+    byte1_len = len(byte1)
+    for i in range(len(byte2)):
+        byte2[i] = byte2[i]^byte1[i%byte1_len]
+    m = hashlib.md5()
+    m.update(byte2)
+    result = m.digest()
+    result=base64.encodebytes(result).decode()[:-1]
+    result = result.replace('/', '_')
+    result = result.replace('+', '-')
+    return result
+
+def Schedule(a,b,c):
+    '''
+    a:已经下载的数据块
+    b:数据块的大小
+    c:远程文件的大小
+    '''
+    global total
+    total=c
+    per = 100.0 * a * b / c
+    d=a*b
+    if per > 100 :
+        per = 100
+    if d > c :
+        d = c  
+    if d >= 1024*1024 :
+        d=d/1024/1024
+        s_ext="MB"
+    elif d >= 1024 :
+        d=d/1024.0
+        s_ext="KB"
+    else :
+        s_ext="B"
+    if c >= 1024*1024 :
+        c=c/1024/1024
+        t_ext="MB"
+    elif c >= 1024 :
+        c=c/1024.0
+        t_ext="KB"
+    else :
+        t_ext="B"
+    s = '\r下载 {} {:.2f}%    {:.2f} {} / {:.2f} {} '.format(fname,per,d,s_ext,c,t_ext)
+    sys.stderr.write(s)
+        
+def get_playlist(playlist_id):
+    url = 'http://music.163.com/api/playlist/detail?id=%s' % playlist_id
+    resp = urllib.request.urlopen(url)
+    data = json.loads(resp.read().decode("utf8"))
+    resp.close()
+    return (data['result'])
+
+def save_track(track, folder, position, nl):
+    print(track)
+    name = track['name']
+    global num
+    num=num+1
+    print(num)
+    singer = track['artists'][0]['name']
+    try :
+        sid=track['hMusic']['dfsId']
+        ext=track['hMusic']['extension']
+    except:
+        sid=track['mMusic']['dfsId']
+        ext=track['mMusic']['extension']      
+    #url = 'http://m%d.music.126.net/%s/%s.%s' % (random.randrange(1, 3), encrypted_id(sid), sid,ext)
+
+    mser = num%3+1
+    url = 'http://m{}.music.126.net/{}/{}.{}'.format(mser,encrypted_id(sid), sid,ext)
+    print(url)
+    if position < 10:
+        pos = "0%d" % position
+    else:
+        pos = "%d" % position
+    global fname
+    if nl == 0 :
+        fname = pos + '_' + name + '_' + singer + '.' + ext
+    else :
+        fname = name + '_' + singer + '.' + ext 
+    fname = str(fname).replace('/', '_')
+    fpath = os.path.normpath(os.path.join(folder, fname))
+    if os.path.exists(fpath):
+        global got
+        got+=1
+        print(fpath,"已经存在了，跳过下载")
+        return
+    # try:
+        #time.sleep(3)
+        #调用外部命令aria2c下载
+        # shell = "aria2c --user-agent=\"Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36\"  --file-allocation=falloc --max-concurrent-downloads=5 -d \"" + folder + "\" -o \"" + fname + "\"  \"" + url + "\"" 
+        #shell = "aria2c --file-allocation=falloc --max-connection-per-server=5  -d \"" + folder + "\" -o \"" + fname + "\"  \"" + url + "\"" 
+        #shell = "axel -n 10 -o \"" + fpath + "\" --header=\"Cookie:appver=1.7.3\" --user-agent=\"Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36\" -N \""+ url + "\""
+        #print(shell)
+    cc = '''%s
+  dir=%s
+  out=%s
+  header=Cookie: appver=1.7.6
+  continue=true
+  max-connection-per-server=5
+  split=10
+  parameterized-uri=true
+
+''' % (url,folder,fname)
+    # print (cc)
+
+    with open (mp3_dl,'a') as  x :
+        x.write(cc)
+
+        # os.system(shell)
+
+        #用内建模块下载
+        # time1=time.time()
+        # urllib.request.urlretrieve(url,fpath,Schedule)
+        # time2=time.time()-time1
+        # rate=total/time2/1024
+        # print("{} 下载完成，共计耗时{:.2f}秒，平均下载速度 {:.2f}KB/s".format(fname,time2,rate))
+
+    #     global ok
+    #     ok=ok+1
+    # except :
+    #     print (fpath,"下载失败了")
+    #     if os.path.exists(fpath) :
+    #         os.remove(fpath)
+    #     global fail
+    #     fail+=1
+
+def download_playlist(playlist_id, folder='.'):
+    playlist = get_playlist(playlist_id)
+    name = playlist['name']
+    folder = os.path.join(folder, name)
+    if not os.path.exists(folder):
+        os.makedirs(folder)   
+    for idx, track in enumerate(playlist['tracks']): 
+        save_track(track, folder, idx+1, 1)
+
+def get_album_songs(album,folder='.'):
+    url = 'http://music.163.com/api/album/%s/' % str(album)
+    resp = urllib.request.urlopen(url)
+    song_json = json.loads(resp.read().decode("utf-8"))
+    resp.close()
+    playlist = song_json['album']
+    name = playlist['name']
+    folder = os.path.join(folder, name)
+    if not os.path.exists(folder):
+        os.makedirs(folder)   
+    for idx, track in enumerate(playlist['songs']):
+        save_track(track, folder, idx+1, 0)
+
+if __name__ == '__main__':
+    mp3_dl = os.path.realpath("/tmp/mp3.download")
+    if os.path.exists(mp3_dl):
+        os.remove(mp3_dl)
+
+    num = 0
+    ok = 0
+    got = 0
+    fail = 0    
+    cj = http.cookiejar.CookieJar()
+    opener = urllib.request.build_opener()
+    opener.add_handler(urllib.request.HTTPCookieProcessor(cj))
+    opener.addheaders.append(('Cookie', 'appver=1.7.6'))
+    opener.addheaders.append(('Referer', 'http://music.163.com'))
+    opener.addheaders.append(('Connection','keep-alive'))
+    # opener.addheaders.append(('Accept-Encoding', 'gzip,deflate,sdch'))
+    # opener.addheaders.append(('Accept: text/html','application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'))
+
+    urllib.request.install_opener(opener)
+    
+    #下载歌单和排行榜
+    list_id =[
+    # 3779629,   #云音乐新歌榜
+    # 3778678,   #云音乐热歌榜
+    # 2884035,   #网易原创歌曲榜
+    # 10520166,  #云音乐电音榜
+    # 3812895,   #Beatport全球电子舞曲榜
+    # 60198,     #美国Billboard周榜
+    # 60131,     #日本Oricon周榜
+    # 3733003,   #韩国Melon排行榜周榜
+    # 60255,     #韩国Mnet排行榜周榜
+    # 112504,    #中国TOP排行榜（港台榜）
+    # 64016,     #中国TOP排行榜（内地榜）
+    # 10169002,  #香港电台中文歌曲龙虎榜
+    # 256172,    #Channel[V]华语榜
+    # 257105,    #Channel[V]欧美榜
+    # 256189,    #Channel[V]日韩榜
+    # 4395559,   #华语金曲榜
+    # 3906086,   #华语巴士音乐榜
+    # 4217186,   #六百首精选华语歌（上）
+    # 4852076,   #六百首精选华语歌（下）
+
+    # 11124931,  #菇凉的爱情毒计
+    # 11280266,   #不知不觉爱上中国风
+    # 4509745,    #最炫中国风
+    # 9324004,    #墨迹坊，唯美中国风。
+    # 4980381
+
+    # 34071650
+    ]
+    if len(list_id) > 0 :
+        for i in list_id :
+            download_playlist(i,'/data/mp3')
+
+    #下载专辑
+    album_list=[
+    # 2716165,    #江湖
+    # 2759418,    #마리오네트
+    # 2504593,    #一万个舍不得
+    # 2746001,     #克卜勒
+    # 2692176,    #咱们结婚吧 电视原声带
+    # 2732105,    #我去年买了个表
+    # 2285010,    #世界
+    # 30488,    #都是夜归人
+    2630040
+    ]
+    if len(album_list) > 0 :
+        for i in album_list :
+            get_album_songs(i,'/data/mp3')
+    report = "Done! 共 "+str(num)+" 首歌，成功下载了 "+str(ok)+" 首歌。"
+    if got > 0:
+        report = report+"跳过了 "+ str(got) +" 首已经存在的歌曲"
+    if fail > 0:
+        report=report + "下载失败的歌曲" + str(fail) + " 首。"
+    print(report)
+
+
+
+
+

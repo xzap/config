@@ -1,0 +1,10 @@
+#!/bin/bash
+tempfile=/tmp/tmp_hosts
+tempfile2=/tmp/tmp_hosts2
+hostsfile=/etc/dnsmasq.hosts
+#curl 'http://serve.netsh.org/pub/hosts.php?passcode=17589&gs=on&wk=on&twttr=on&fb=on&flkr=on&dpbx=on&odrv=on&yt=on' -H 'Cookie: hostspasscode=17589; _gat=1; Hm_lvt_e26a7cd6079c926259ded8f19369bf0b=1420331871; Hm_lpvt_e26a7cd6079c926259ded8f19369bf0b=1420331871; _ga=GA1.2.1519834324.1420330104' -H 'Accept-Encoding: gzip, deflate, sdch' -H 'Accept-Language: en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4' -H 'User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36' -H 'Accept: */*' -H 'Referer: http://serve.netsh.org/pub/gethosts.php' -H 'X-Requested-With: XMLHttpRequest' -H 'Connection: keep-alive' --compressed > $tempfile
+#sudo rm $hostsfile
+cat $tempfile|grep -v '^#'|grep [0-9].[0-9].[0-9].[0-9] |sed '/^$/d'| sed '1,6d' > $tempfile2
+# cat $tempfile2
+awk '{print "address=/"$2"/"$1}' $tempfile2 > $hostsfile
+

@@ -1,0 +1,66 @@
+#!/bin/bash
+# indir="/home/xzap/ximalaya/doudou"
+# outdir="/home/xzap/ximalaya/doudou_cut"
+# mkdir -p $outdir
+# find $indir -name *.mp3|sort|while read i
+# 	do
+
+# 	j=`basename $i`
+# 	k=`echo ${j##[0-9]*_}|sed 's/《//g'|sed 's/》/_/g'`
+# 	y=$outdir/$k
+
+# 	echo "ffmpeg -i $i -ss 62 $y"
+	
+# done
+
+
+ffmpeg -i /home/xzap/ximalaya/doudou/0730_《窗边的小豆豆》01.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_01.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0730_《窗边的小豆豆》02.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_02.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0730_《窗边的小豆豆》03.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_03.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0730_《窗边的小豆豆》04.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_04.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0730_《窗边的小豆豆》05.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_05.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0730_《窗边的小豆豆》06.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_06.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0730_《窗边的小豆豆》07.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_07.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0730_《窗边的小豆豆》08.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_08.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0731_《窗边的小豆豆》09.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_09.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0731_《窗边的小豆豆》10.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_10.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0731_《窗边的小豆豆》11.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_11.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0731_《窗边的小豆豆》12.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_12.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0731_《窗边的小豆豆》13.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_13.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0731_《窗边的小豆豆》14.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_14.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0731_《窗边的小豆豆》15.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_15.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0731_《窗边的小豆豆》16.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_16.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0802_《窗边的小豆豆》17.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_17.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0802_《窗边的小豆豆》18.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_18.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0802_《窗边的小豆豆》19.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_19.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0803_《窗边的小豆豆》20.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_20.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0803_《窗边的小豆豆》21.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_21.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0803_《窗边的小豆豆》22.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_22.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0803_《窗边的小豆豆》23.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_23.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0803_《窗边的小豆豆》24.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_24.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0804_《窗边的小豆豆》25.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_25.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0804_《窗边的小豆豆》26.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_26.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0804_《窗边的小豆豆》27.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_27.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0804_《窗边的小豆豆》28.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_28.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0804_《窗边的小豆豆》29.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_29.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0804_《窗边的小豆豆》30.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_30.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0805_《窗边的小豆豆》31.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_31.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0805_《窗边的小豆豆》32.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_32.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0805_《窗边的小豆豆》33.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_33.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0806_《窗边的小豆豆》34.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_34.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0806_《窗边的小豆豆》35.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_35.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0806_《窗边的小豆豆》36.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_36.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0806_《窗边的小豆豆》37.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_37.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0806_《窗边的小豆豆》38.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_38.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0807_《窗边的小豆豆》39.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_39.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0808_《窗边的小豆豆》40.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_40.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0808_《窗边的小豆豆》41.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_41.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0808_《窗边的小豆豆》42.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_42.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0809_《窗边的小豆豆》43.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_43.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0809_《窗边的小豆豆》44.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_44.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0810_《窗边的小豆豆》45.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_45.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0810_《窗边的小豆豆》46.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_46.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0812_《窗边的小豆豆》47.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_47.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0812_《窗边的小豆豆》48.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_48.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0812_《窗边的小豆豆》49.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_49.mp3
+ffmpeg -i /home/xzap/ximalaya/doudou/0812_《窗边的小豆豆》50.mp3 -ss 62 /home/xzap/ximalaya/doudou_cut/窗边的小豆豆_50.mp3

@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/xzap/.config/autostart'
+let g:netrw_dirhist_2='/home/xzap/.mplayer'
+let g:netrw_dirhist_3='/home/xzap/.config/fcitx/sogou'
+let g:netrw_dirhist_4='/home/xzap/.config/mpv'
+let g:netrw_dirhist_5='/home/xzap/ximalaya'
+let g:netrw_dirhist_6='/usr/share/doc/mpv/examples'
+let g:netrw_dirhist_7='/data/12/333/epub_星河大帝'
