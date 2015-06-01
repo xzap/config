@@ -1,4 +1,0 @@
-#!/bin/sh
-MLDONKEYIP=127.0.0.1 MLDONKEYTELNET_PORT=4000
-if [ $1 = "--auth" ] ; then auth="auth $2" shift 2 else auth="" fi
-nc $MLDONKEYIP $MLDONKEYTELNET_PORT <<EOF $auth $* q EOF

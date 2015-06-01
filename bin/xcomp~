@@ -1,5 +1,0 @@
-#!/bin/bash
-#透明和阴影
-xcompmgr -Ss -n -Cc -fF -I-10 -O-10 -D1 -t-3 -l-4 -r4 &
-xcompmgr -c -t-5 -l-5 -r4 -o.55 &
-exit 0

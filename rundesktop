@@ -1,2 +1,0 @@
-#!/bin/bash
-eval "`grep [eE]xec $1|sed 's/^.*=//'`"

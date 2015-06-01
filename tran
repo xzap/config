@@ -1,2 +1,0 @@
-#!/bin/bash
-w3m -dump -no-cookie http://dict.cn/mini.php?q=$1

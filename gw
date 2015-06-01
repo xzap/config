@@ -1,6 +1,0 @@
-#!/bin/bash
-
-#wget --http-user=hmzzx  --http-password=123456 http://www.jiashanedu.net/gw/  -q -T 10 -O- 2>/dev/null | iconv -f gbk|sed -n '/img src=images\/ico.gif/,/images\/more.gif/p'|sed 's/ReadNews.asp/http:\/\/www\.jiashanedu.net\/gw\/ReadNews.asp/g'|sed 's/src=\"images/src=\"http:\/\/www\.jiashanedu.net\/gw\/images/g'|sed 's/src=images/src=http:\/\/www\.jiashanedu.net\/gw\/images/g' |sed '$d' > /tmp/hh$$.htm ; chromium-browser --enable-plugins --app=file:///tmp/hh$$.htm
-wget --http-user=hmzzx  --http-password=123456 http://www.jiashanedu.net/gw/  -q -T 10 -O- 2>/dev/null |sed -n '/img src=images\/ico.gif/,/images\/more.gif/p'|sed 's/ReadNews.asp/http:\/\/www\.jiashanedu.net\/gw\/ReadNews.asp/g'|sed 's/src=\"images/src=\"http:\/\/www\.jiashanedu.net\/gw\/images/g'|sed 's/src=images/src=http:\/\/www\.jiashanedu.net\/gw\/images/g' |sed '$d' > /tmp/hh$$.htm ; chromium-browser --enable-plugins --app=file:///tmp/hh$$.htm
-wait 
-rm /tmp/hh$$.htm
